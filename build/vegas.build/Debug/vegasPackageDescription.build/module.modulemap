@@ -1,0 +1,4 @@
+framework module vegasPackageDescription {
+    header "vegasPackageDescription-Swift.h"
+    requires objc
+}

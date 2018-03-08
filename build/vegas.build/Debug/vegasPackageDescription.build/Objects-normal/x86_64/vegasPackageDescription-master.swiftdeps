@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "ebcffccd4c7249036792ee3df9f5c5d6"
+build_time: [1516488334, 687449000]
+inputs:
+  "/Users/infra/Documents/GitHub/vegas/Package.swift": [1516482584, 0]

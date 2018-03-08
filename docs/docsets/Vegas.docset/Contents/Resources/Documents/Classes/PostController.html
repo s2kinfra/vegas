@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PostController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PostController" class="dashAnchor"></a>
+    <a title="PostController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Vegas Docs</a> (38% documented)</p>
+        <p class="header-right"><a href="https://github.com/s2kinfra/vegas"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Vegas Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PostController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/File.html">File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostController.html">PostController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/UserErrors.html">UserErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/fileType.html">fileType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Config.html">Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Droplet.html">Droplet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Request.html">Request</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:3App10FollowableP">Followable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/sessionCacheStruct.html">sessionCacheStruct</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PostController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">PostController</span><span class="p">:</span> <span class="kt">ResourceRepresentable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Here we have a controller that helps facilitate
+RESTful interactions with our Posts table</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC5index4HTTP21ResponseRepresentable_pAE7RequestCKF"></a>
+                    <a name="//apple_ref/swift/Method/index(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC5index4HTTP21ResponseRepresentable_pAE7RequestCKF">index(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When users call &lsquo;GET&rsquo; on &lsquo;/posts&rsquo;
+it should return an index of all available posts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC5store4HTTP21ResponseRepresentable_pAE7RequestCKF"></a>
+                    <a name="//apple_ref/swift/Method/store(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC5store4HTTP21ResponseRepresentable_pAE7RequestCKF">store(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When consumers call &lsquo;POST&rsquo; on &lsquo;/posts&rsquo; with valid JSON
+construct and save the post</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">store</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC4show4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF"></a>
+                    <a name="//apple_ref/swift/Method/show(_:post:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC4show4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF">show(_:post:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When the consumer calls &lsquo;GET&rsquo; on a specific resource, ie:
+&lsquo;/posts/13rd88&rsquo; we should show that specific post</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span> <span class="nv">post</span><span class="p">:</span> <span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC6delete4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:post:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC6delete4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF">delete(_:post:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When the consumer calls &lsquo;DELETE&rsquo; on a specific resource, ie:
+&lsquo;posts/l2jd9&rsquo; we should remove that resource from the database</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span> <span class="nv">post</span><span class="p">:</span> <span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC5clear4HTTP21ResponseRepresentable_pAE7RequestCKF"></a>
+                    <a name="//apple_ref/swift/Method/clear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC5clear4HTTP21ResponseRepresentable_pAE7RequestCKF">clear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When the consumer calls &lsquo;DELETE&rsquo; on the entire table, ie:
+&lsquo;/posts&rsquo; we should remove the entire table</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clear</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC6update4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:post:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC6update4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF">update(_:post:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When the user calls &lsquo;PATCH&rsquo; on a specific resource, we should
+update that resource to the new values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span> <span class="nv">post</span><span class="p">:</span> <span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC7replace4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF"></a>
+                    <a name="//apple_ref/swift/Method/replace(_:post:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC7replace4HTTP21ResponseRepresentable_pAE7RequestC_AA0B0C4posttKF">replace(_:post:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When a user calls &lsquo;PUT&rsquo; on a specific resource, we should replace any
+values that do not exist in the request with null.
+This is equivalent to creating a new Post with the same ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">replace</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span> <span class="nv">post</span><span class="p">:</span> <span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14PostControllerC12makeResource5Vapor0E0CyAA0B0CGyF"></a>
+                    <a name="//apple_ref/swift/Method/makeResource()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14PostControllerC12makeResource5Vapor0E0CyAA0B0CGyF">makeResource()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When making a controller, it is pretty flexible in that it
+only expects closures, this is useful for advanced scenarios, but
+most of the time, it should look almost identical to this 
+implementation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">makeResource</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Resource</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://fabularis.dk" target="_blank" rel="external">Daniel</a>. All rights reserved. (Last updated: 2018-01-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
