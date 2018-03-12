@@ -47,13 +47,13 @@ extension Config {
     /// schemas prepared before the app boots
     private func setupPreparations() throws {
         preparations.append(User.self)
+        preparations.append(File.self)
         preparations.append(Follow.self)
         preparations.append(Feed.self)
         preparations.append(FeedKeys.self)
         preparations.append(Notification.self)
         preparations.append(NotificationParameterData.self)
         preparations.append(Trip.self)
-        preparations.append(File.self)
         preparations.append(Comment.self)
         preparations.append(Attachment.self)
     }

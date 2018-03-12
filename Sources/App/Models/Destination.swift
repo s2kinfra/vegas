@@ -1,14 +1,14 @@
 //
-//  Trip.swift
+//  Destination.swift
 //  App
 //
-//  Created by Daniel Skevarp on 2018-02-10.
+//  Created by Daniel Skevarp on 2018-03-11.
 //
 
 import Foundation
 import FluentProvider
 
-enum TripErrors : Error {
+enum DestinationErrors : Error {
     ///Invalid credentials sent when trying to login
     case Unauthorized,
     ///No credentials or insuffient credentials sent for login
@@ -27,7 +27,8 @@ enum TripErrors : Error {
         }
     }
 }
-final class Trip : Model,ObjectIdentifiable, DataStorage {
+
+final class Destination : Model,ObjectIdentifiable, DataStorage {
     var dataStorage = dataStorageRow()
     var dataStorageACL = dataStorageACLRow()
     var storage: Storage = Storage()
@@ -62,16 +63,16 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
     
     func initDatalevels() {
         self.setDataLevel(key: "isPrivate", levels: [.row, .json, .guest])
-        self.setDataLevel(key: "attendees", levels: [.row, .json])
         self.setDataLevel(key: "creator", levels: [.row, .json, .guest])
         self.setDataLevel(key: "startDate", levels: [.row, .json])
         self.setDataLevel(key: "endDate", levels: [.row, .json])
         self.setDataLevel(key: "timestamp", levels: [.row, .json, .guest])
         self.setDataLevel(key: "name", levels: [.row, .json, .guest])
-        self.setDataLevel(key: "tripImage", level: .row)
+        self.setDataLevel(key: "destinationImage", level: .row)
+        self.setDataLevel(key: "trip", levels: [.row,.json])
     }
     
-    var tripImage : Int? {
+    var destinationImage : Int? {
         set(newValue) {
             self.dataStorage["tripImage"] = newValue
         }
@@ -122,7 +123,15 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             return getDataFor(key: "timestamp")
         }
     }
-    var destinations : [String]?//should of course have own type, just for prototyping
+    var trip : Int? {
+        set(newValue) {
+            self.dataStorage["trip"] = newValue
+        }
+        get{
+            return getDataFor(key: "trip")
+        }
+    }
+    
     var places : [String]? //should of course have own type, just for prototyping
     var _creator : User {
         get {
@@ -143,9 +152,9 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
         }
     }
     
-    var _tripImage : File {
+    var _destinationImage : File {
         get {
-            guard let fileId = self.tripImage else {
+            guard let fileId = self.destinationImage else {
                 let workDir = Config.workingDirectory()
                 let file = File.init(name: "defaultProfilePicture", path: "/img/profile/default-avatar.png", absolutePath: "\(workDir)public/img/profile/profile.png", user_id: self.id!, type: .image)
                 file.id = 0
@@ -161,23 +170,8 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             return file
         }
     }
-    ///attendees needs to be own object / <pivot>
-    var attendees : [User] {
-        set(newValue) {
-            self.dataStorage["attendees"] = newValue
-        }
-        get {
-            var users = [User]()
-            let keys : [User] = getDataFor(key: "attendees")!
-            for attendants in keys {
-                let attendant = attendants
-                users.append(attendant)
-            }
-            return users
-        }
-    }
     
-    init(tripStartDate _startdate : Double, tripEndDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : Int, name _name : String) {
+    init(startDate _startdate : Double, endDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : Int, name _name : String) {
         self.isPrivate = _isprivate
         self.startDate = _startdate
         self.endDate = _enddate
@@ -187,7 +181,7 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
         self.initDatalevels()
     }
     
-    func isUserTiedToTrip(user _user : User) -> Bool {
+    func isUserTiedToDestination(user _user : User) -> Bool {
         if _user.id?.int == self.creator {
             return true
         }
@@ -201,7 +195,7 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
         return false
     }
     
-    func updateTripFromJSON(_ json : JSON) throws {
+    func updateDestinationFromJSON(_ json : JSON) throws {
         for (k,v) in json.object! {
             self.dataStorage[k] = v
         }
@@ -231,7 +225,7 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
     func getTripDataForUser(user _user: User) throws -> JSON {
         var json = JSON()
         
-        if isUserTiedToTrip(user: _user) {
+        if isUserTiedToDestination(user: _user) {
             return try self.makeJSON()
         }else {
             /// Only data that is allowed from an "outside" perspective
@@ -241,7 +235,7 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             try json.set("creator", self._creator.makeBasicJSON())
             try json.set("timeline", "")
             try json.set("followers", "")
-            try json.set("tripImage", "")
+            try json.set("destinationImage", "")
             try json.set("id",self.id!)
         }
         
@@ -252,37 +246,34 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
         
     }
     
-    static func getUsersTrips(user : User, requester: User) throws -> [Trip] {
-        var trips = [Trip]()
+    static func getUsersDestinations(user : User, requester: User) throws -> [Destination] {
+        var destinations = [Destination]()
         
         if try user.isUserRelatedTo(user: requester) || user.id! == requester.id! {
-            let allTrips = try Trip.makeQuery().filter("creator", .equals, user.id!).all()
-            trips = allTrips
+            let allDestinations = try Destination.makeQuery().filter("creator", .equals, user.id!).all()
+            destinations = allDestinations
         }else {
-            let allTrips = try Trip.makeQuery().filter("creator", .equals, user.id!).filter("isPrivate", .equals, false).all()
-            trips = allTrips
+            let allDestinations = try Destination.makeQuery().filter("creator", .equals, user.id!).filter("isPrivate", .equals, false).all()
+            destinations = allDestinations
         }
         
-        return trips
+        return destinations
     }
     
-    static func createNewTrip(tripStartDate _startdate : Double, tripEndDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : User, name _name : String) throws -> Trip {
+    static func createNewDestination(startDate _startdate : Double, endDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : User, trip _trip : Int?, name _name : String) throws -> Destination {
         
-        let trip = Trip.init(tripStartDate: _startdate, tripEndDate: _enddate, isPrivate: _isprivate, creator: _creator.id!.int!, name : _name)
-        
-        try trip.save()
-        return trip
+        let destination = Destination.init(startDate: _startdate, endDate: _enddate, isPrivate: _isprivate, creator: _creator.id!.int!, name : _name)
+        destination.trip = _trip
+        try destination.save()
+        return destination
     }
     
-    
-}
-// MARK : Timelineable
-extension Trip : Timelineable {
     
 }
 
+
 // MARK: Followable
-extension Trip : Followable {
+extension Destination : Followable {
     var doesFollowNeedAccept: Bool {
         guard let isPriv = self.isPrivate else {
             return true //default private
@@ -294,7 +285,7 @@ extension Trip : Followable {
 }
 
 // MARK: Fluent Preparation
-extension Trip: Preparation {
+extension Destination: Preparation {
     /// Prepares a table/collection in the database
     /// for storing Posts
     static func prepare(_ database: Database) throws {
@@ -305,6 +296,7 @@ extension Trip: Preparation {
             builder.double("startDate")
             builder.double("endDate")
             builder.bool("isPrivate")
+            builder.int("trip", optional: true, unique: false)
             builder.foreignId(for: File.self, optional: true, unique: false, foreignIdKey: "tripImage", foreignKeyName: "trip_tripimage")
             builder.double("timestamp")
             
@@ -319,7 +311,7 @@ extension Trip: Preparation {
 
 // MARK: JSONConvertible
 /** Convert to user from JSON and from JSON to User */
-extension Trip: JSONConvertible {
+extension Destination: JSONConvertible {
     convenience init(json: JSON) throws {
         self.init()
         for (k,v) in json.object! {
@@ -357,12 +349,12 @@ extension Trip: JSONConvertible {
             JSONfollowers.append(try user.makeBasicJSON())
         }
         try json.set("followers", JSONfollowers)
-        try json.set("tripImage", _tripImage)
+        try json.set("tripImage", _destinationImage)
         try json.set("id",self.id!)
         return json
     }
 }
-extension Trip : Notifiable {
+extension Destination : Notifiable {
     func createNotification(notificationType _type: NotificationType, parameters _params: [NotificationParameter]?) throws -> Notification
     {
         let notif = Notification.init(receiver: Identifier(self.creator!), notificationType: _type)
@@ -379,9 +371,12 @@ extension Trip : Notifiable {
         return notif
     }
 }
-extension Trip : Commentable {}
-extension Trip : Attachable {}
-extension Trip : Envyable {}
-extension Trip : Timestampable {}
-extension Trip : Parameterizable {}
+// MARK : Timelineable
+extension Destination : Timelineable {}
+extension Destination : Commentable {}
+extension Destination : Attachable {}
+extension Destination : Envyable {}
+extension Destination : Timestampable {}
+extension Destination : Parameterizable {}
+
 

@@ -160,7 +160,8 @@ final class TripController : SuperController {
                     throw TriprAPIMessageError.invalidData(field: "tripImage")
                 }
                 let file = try FileHandler.uploadBase64File(user:me, file: base64data, filename: image.filename)
-                let _ = try trip.addAttachment(file: file)
+                trip.tripImage = file.id?.int
+                try trip.save()
             }
             
             return try self.createResponse(payload: try trip.makeJSON(), status: (.ok, "Trip created"))
