@@ -20,7 +20,7 @@ class TripRoutes {
         let passmw = isAuthenticatedMiddleware()
         
         let secureArea = routeBuilder.grouped(passmw)
-        
+        secureArea.post(Trip.parameter, "destination", handler: createNewDestination)
         secureArea.put(Trip.parameter, handler: updateTrip)
         secureArea.get(Trip.parameter, handler: getTrip)
         secureArea.post(Trip.parameter, "comment", handler: addComment)
@@ -56,6 +56,16 @@ class TripRoutes {
         //
         //        /// Notification routes
         //        secureArea.get("notifications", handler: getNotifications)
+    }
+    
+    func createNewDestination(request: Request) throws -> ResponseRepresentable {
+        do {
+            let message = try request.getAPIRequestMessage()
+            let trip = TripController.init(forInterface: .api, request: request, message: message)
+            return try trip.createNewDestination()
+        }catch let error as TriprAPIMessageError {
+            return try TripController.createResponse(payload: request.json!, request: request, message: nil,interface: .api, status: (.error, error.getErrorCode()))
+        }
     }
     
     func getUsersTrip(request: Request) throws -> ResponseRepresentable {
@@ -102,7 +112,7 @@ class TripRoutes {
         /*
          needs to be rebuilt, should be a post service where you post usernames to invite (array)
          and ofcourse also in the controller.
-        */
+         */
         let trip = TripController.init(forInterface: .api, request: request, message: nil)
         return try trip.inviteUser()
     }

@@ -64,8 +64,8 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
     func initDatalevels() {
         self.setDataLevel(key: "isPrivate", levels: [.row, .json, .guest])
         self.setDataLevel(key: "creator", levels: [.row, .json, .guest])
-        self.setDataLevel(key: "startDate", levels: [.row, .json])
-        self.setDataLevel(key: "endDate", levels: [.row, .json])
+        self.setDataLevel(key: "arrivalDate", levels: [.row, .json])
+        self.setDataLevel(key: "departureDate", levels: [.row, .json])
         self.setDataLevel(key: "timestamp", levels: [.row, .json, .guest])
         self.setDataLevel(key: "name", levels: [.row, .json, .guest])
         self.setDataLevel(key: "destinationImage", level: .row)
@@ -74,10 +74,10 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
     
     var destinationImage : Int? {
         set(newValue) {
-            self.dataStorage["tripImage"] = newValue
+            self.dataStorage["destinationImage"] = newValue
         }
         get{
-            return getDataFor(key: "tripImage")
+            return getDataFor(key: "destinationImage")
         }
     }
     
@@ -98,20 +98,20 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
         }
     }
     
-    var startDate : Double?{
+    var arrivalDate : Double?{
         set(newValue) {
-            self.dataStorage["startDate"] = newValue
+            self.dataStorage["arrivalDate"] = newValue
         }
         get {
-            return getDataFor(key: "startDate")
+            return getDataFor(key: "arrivalDate")
         }
     }
-    var endDate : Double?{
+    var departureDate : Double?{
         set(newValue) {
-            self.dataStorage["endDate"] = newValue
+            self.dataStorage["departureDate"] = newValue
         }
         get {
-            return getDataFor(key: "endDate")
+            return getDataFor(key: "departureDate")
         }
     }
     
@@ -171,10 +171,10 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
         }
     }
     
-    init(startDate _startdate : Double, endDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : Int, name _name : String) {
+    init(arrivalDate _arrivalDate : Double, departureDate _departureDate : Double, isPrivate _isprivate : Bool, creator _creator : Int, name _name : String) {
         self.isPrivate = _isprivate
-        self.startDate = _startdate
-        self.endDate = _enddate
+        self.arrivalDate = _arrivalDate
+        self.departureDate = _departureDate
         self.creator = _creator
         self.name = _name
         self.timestamp = Date().timeIntervalSince1970
@@ -197,12 +197,26 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
     
     func updateDestinationFromJSON(_ json : JSON) throws {
         for (k,v) in json.object! {
-            self.dataStorage[k] = v
+            if k != "destinationImage" {
+                self.dataStorage[k] = v
+            }
         }
         
         try self.save()
     }
     
+    func getDestinationsTrip() -> Trip? {
+        guard let trip_id = self.trip else {
+            return nil
+        }
+        
+        do {
+            let trip = try Trip.find(trip_id)
+            return trip
+        } catch {
+            return nil
+        }
+    }
     func acceptFollowRequest(from _from : Identifier,by _by : Identifier) throws {
         ///Right now only the creator can accept follow requests
         if _by == self._creator.id! {
@@ -222,7 +236,7 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
         let _ = try self._creator.createNotification(notificationType: _type, parameters: _params)
     }
     
-    func getTripDataForUser(user _user: User) throws -> JSON {
+    func getDestinationDataForUser(user _user: User) throws -> JSON {
         var json = JSON()
         
         if isUserTiedToDestination(user: _user) {
@@ -260,9 +274,9 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
         return destinations
     }
     
-    static func createNewDestination(startDate _startdate : Double, endDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : User, trip _trip : Int?, name _name : String) throws -> Destination {
+    static func createNewDestination(arrivalDate _arrivalDate : Double, departureDate _departureDate : Double, isPrivate _isprivate : Bool, creator _creator : User, trip _trip : Int?, name _name : String) throws -> Destination {
         
-        let destination = Destination.init(startDate: _startdate, endDate: _enddate, isPrivate: _isprivate, creator: _creator.id!.int!, name : _name)
+        let destination = Destination.init(arrivalDate: _arrivalDate, departureDate: _departureDate, isPrivate: _isprivate, creator: _creator.id!.int!, name : _name)
         destination.trip = _trip
         try destination.save()
         return destination
@@ -291,15 +305,14 @@ extension Destination: Preparation {
     static func prepare(_ database: Database) throws {
         try database.create(self) { builder in
             builder.id()
-            builder.foreignId(for: User.self, optional: false, unique: false, foreignIdKey: "creator", foreignKeyName: "trip_creator")
+            builder.foreignId(for: User.self, optional: false, unique: false, foreignIdKey: "creator", foreignKeyName: "dest_creator")
             builder.string("name")
-            builder.double("startDate")
-            builder.double("endDate")
+            builder.double("arrivalDate")
+            builder.double("departureDate")
             builder.bool("isPrivate")
             builder.int("trip", optional: true, unique: false)
-            builder.foreignId(for: File.self, optional: true, unique: false, foreignIdKey: "tripImage", foreignKeyName: "trip_tripimage")
+            builder.foreignId(for: File.self, optional: true, unique: false, foreignIdKey: "destinationImage", foreignKeyName: "dest_tripimage")
             builder.double("timestamp")
-            
         }
     }
     
@@ -349,7 +362,7 @@ extension Destination: JSONConvertible {
             JSONfollowers.append(try user.makeBasicJSON())
         }
         try json.set("followers", JSONfollowers)
-        try json.set("tripImage", _destinationImage)
+        try json.set("destinationImage", _destinationImage)
         try json.set("id",self.id!)
         return json
     }

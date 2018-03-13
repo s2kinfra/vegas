@@ -54,6 +54,7 @@ extension Config {
         preparations.append(Notification.self)
         preparations.append(NotificationParameterData.self)
         preparations.append(Trip.self)
+        preparations.append(Destination.self)
         preparations.append(Comment.self)
         preparations.append(Attachment.self)
     }

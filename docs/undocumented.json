@@ -1,6 +1,2253 @@
 {
   "warnings": [
     {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 11,
+      "symbol": "attachmentPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 12,
+      "symbol": "attachmentPayload.base64",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 13,
+      "symbol": "attachmentPayload.filename",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 15,
+      "symbol": "attachmentPayload.init(base64:filename:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 20,
+      "symbol": "attachmentPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/AttachmentPayload.swift",
+      "line": 27,
+      "symbol": "attachmentPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 10,
+      "symbol": "addCommentPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 11,
+      "symbol": "addCommentPayload.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 12,
+      "symbol": "addCommentPayload.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 13,
+      "symbol": "addCommentPayload.attachments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 15,
+      "symbol": "addCommentPayload.init(text:timestamp:attachment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 21,
+      "symbol": "addCommentPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/CommentPayload.swift",
+      "line": 29,
+      "symbol": "addCommentPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 9,
+      "symbol": "updateDestinationPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 10,
+      "symbol": "updateDestinationPayload.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 11,
+      "symbol": "updateDestinationPayload.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 12,
+      "symbol": "updateDestinationPayload.destinationStartDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 13,
+      "symbol": "updateDestinationPayload.destinationEndDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 14,
+      "symbol": "updateDestinationPayload.destinationImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 16,
+      "symbol": "updateDestinationPayload.init(isPrivate:destinationStartDate:destinationEndDate:name:destinationImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 24,
+      "symbol": "updateDestinationPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 35,
+      "symbol": "updateDestinationPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 58,
+      "symbol": "createNewDestinationPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 60,
+      "symbol": "createNewDestinationPayload.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 61,
+      "symbol": "createNewDestinationPayload.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 62,
+      "symbol": "createNewDestinationPayload.destinationStartDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 63,
+      "symbol": "createNewDestinationPayload.destinationEndDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 64,
+      "symbol": "createNewDestinationPayload.destinationImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 66,
+      "symbol": "createNewDestinationPayload.init(isPrivate:destinationStartDate:destinationEndDate:name:destinationImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 75,
+      "symbol": "createNewDestinationPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/DestinationPayload.swift",
+      "line": 86,
+      "symbol": "createNewDestinationPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 11,
+      "symbol": "updateTripPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 12,
+      "symbol": "updateTripPayload.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 13,
+      "symbol": "updateTripPayload.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 14,
+      "symbol": "updateTripPayload.tripStartDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 15,
+      "symbol": "updateTripPayload.tripEndDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 16,
+      "symbol": "updateTripPayload.tripImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 18,
+      "symbol": "updateTripPayload.init(isPrivate:tripStartDate:tripEndDate:name:tripImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 26,
+      "symbol": "updateTripPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 37,
+      "symbol": "updateTripPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 60,
+      "symbol": "createNewTripPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 62,
+      "symbol": "createNewTripPayload.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 63,
+      "symbol": "createNewTripPayload.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 64,
+      "symbol": "createNewTripPayload.tripStartDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 65,
+      "symbol": "createNewTripPayload.tripEndDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 66,
+      "symbol": "createNewTripPayload.tripImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 68,
+      "symbol": "createNewTripPayload.init(isPrivate:tripStartDate:tripEndDate:name:tripImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 77,
+      "symbol": "createNewTripPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/TripPayload.swift",
+      "line": 88,
+      "symbol": "createNewTripPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 11,
+      "symbol": "UserPayloadRegister",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 12,
+      "symbol": "UserPayloadRegister.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 13,
+      "symbol": "UserPayloadRegister.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 14,
+      "symbol": "UserPayloadRegister.firstname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 15,
+      "symbol": "UserPayloadRegister.lastname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 16,
+      "symbol": "UserPayloadRegister.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 18,
+      "symbol": "UserPayloadRegister.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 26,
+      "symbol": "UserPayloadRegister.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 36,
+      "symbol": "UserPayloadRegister.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 52,
+      "symbol": "UserPayloadLogin",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 53,
+      "symbol": "UserPayloadLogin.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 54,
+      "symbol": "UserPayloadLogin.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 56,
+      "symbol": "UserPayloadLogin.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 61,
+      "symbol": "UserPayloadLogin.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/UserPayloads.swift",
+      "line": 68,
+      "symbol": "UserPayloadLogin.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 10,
+      "symbol": "tripTimelineRequestPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 11,
+      "symbol": "tripTimelineRequestPayload.numberOfFeeds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 12,
+      "symbol": "tripTimelineRequestPayload.startIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 13,
+      "symbol": "tripTimelineRequestPayload.user",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 14,
+      "symbol": "tripTimelineRequestPayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 18,
+      "symbol": "tripTimelineRequestPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 25,
+      "symbol": "tripTimelineRequestPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 37,
+      "symbol": "ownTimelineRequestPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 38,
+      "symbol": "ownTimelineRequestPayload.numberOfFeeds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 39,
+      "symbol": "ownTimelineRequestPayload.startIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 41,
+      "symbol": "ownTimelineRequestPayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 45,
+      "symbol": "ownTimelineRequestPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 52,
+      "symbol": "ownTimelineRequestPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 65,
+      "symbol": "userTimelineRequestPayload",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 66,
+      "symbol": "userTimelineRequestPayload.numberOfFeeds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 67,
+      "symbol": "userTimelineRequestPayload.startIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 68,
+      "symbol": "userTimelineRequestPayload.user",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 69,
+      "symbol": "userTimelineRequestPayload.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 73,
+      "symbol": "userTimelineRequestPayload.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/Payloads/timelinePayload.swift",
+      "line": 80,
+      "symbol": "userTimelineRequestPayload.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": null,
+      "symbol": "triprAPIRequestMessage",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": null,
+      "symbol": "triprAPIResponseMessage",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": null,
+      "symbol": "triprAPIResponseStatusMessageData",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 12,
+      "symbol": "TriprAPIMessageError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 13,
+      "symbol": "TriprAPIMessageError.missingData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 14,
+      "symbol": "TriprAPIMessageError.invalidData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 15,
+      "symbol": "TriprAPIMessageError.outOfStock",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 18,
+      "symbol": "TriprAPIMessageError.getErrorCode()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 77,
+      "symbol": "TriprAPIMessagePriority",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 78,
+      "symbol": "TriprAPIMessagePriority.high",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 78,
+      "symbol": "TriprAPIMessagePriority.low",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 78,
+      "symbol": "TriprAPIMessagePriority.medium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 82,
+      "symbol": "httpMethod",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 83,
+      "symbol": "httpMethod.DELETE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 83,
+      "symbol": "httpMethod.GET",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 83,
+      "symbol": "httpMethod.POST",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 83,
+      "symbol": "httpMethod.PUT",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 86,
+      "symbol": "httpContentTypes",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 87,
+      "symbol": "httpContentTypes.json",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 88,
+      "symbol": "httpContentTypes.www_form",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 89,
+      "symbol": "httpContentTypes.form_data",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 91,
+      "symbol": "httpContentTypes.string",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 116,
+      "symbol": "TriprAPIMessageData",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 117,
+      "symbol": "TriprAPIMessageData.messageId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 118,
+      "symbol": "TriprAPIMessageData.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 119,
+      "symbol": "TriprAPIMessageData.priority",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 120,
+      "symbol": "TriprAPIMessageData.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 121,
+      "symbol": "TriprAPIMessageData.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 122,
+      "symbol": "TriprAPIMessageData.attachment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 125,
+      "symbol": "TriprAPIRequestMessageData",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 126,
+      "symbol": "TriprAPIRequestMessageData.URL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 127,
+      "symbol": "TriprAPIRequestMessageData.APIKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 130,
+      "symbol": "responseStatusCode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 131,
+      "symbol": "responseStatusCode.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 131,
+      "symbol": "responseStatusCode.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 131,
+      "symbol": "responseStatusCode.ok",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 134,
+      "symbol": "triprAPIResponseStatusMessageData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 135,
+      "symbol": "triprAPIResponseStatusMessageData.code",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 136,
+      "symbol": "triprAPIResponseStatusMessageData.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 139,
+      "symbol": "triprAPIResponseMessageData",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 140,
+      "symbol": "triprAPIResponseMessageData.URI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 141,
+      "symbol": "triprAPIResponseMessageData.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 144,
+      "symbol": "triprAPIResponseMessage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 145,
+      "symbol": "triprAPIResponseMessage.messageId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 146,
+      "symbol": "triprAPIResponseMessage.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 147,
+      "symbol": "triprAPIResponseMessage.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 148,
+      "symbol": "triprAPIResponseMessage.URI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 149,
+      "symbol": "triprAPIResponseMessage.priority",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 150,
+      "symbol": "triprAPIResponseMessage.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 151,
+      "symbol": "triprAPIResponseMessage.attachment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 152,
+      "symbol": "triprAPIResponseMessage.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 154,
+      "symbol": "triprAPIResponseMessage.init(payload:attachment:reference:uri:contentType:priority:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 166,
+      "symbol": "triprAPIResponseMessage.getNewResponseMessage(payload:URI:priority:reference:attachment:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 181,
+      "symbol": "triprAPIResponseMessage.getNewResponseMessage(payload:URI:priority:reference:attachment:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 196,
+      "symbol": "triprAPIRequestMessage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 197,
+      "symbol": "triprAPIRequestMessage.messageId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 198,
+      "symbol": "triprAPIRequestMessage.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 199,
+      "symbol": "triprAPIRequestMessage.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 200,
+      "symbol": "triprAPIRequestMessage.URL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 201,
+      "symbol": "triprAPIRequestMessage.priority",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 202,
+      "symbol": "triprAPIRequestMessage.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 203,
+      "symbol": "triprAPIRequestMessage.attachment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 204,
+      "symbol": "triprAPIRequestMessage.APIKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/APIMessage/TriprAPIMessages.swift",
+      "line": 206,
+      "symbol": "triprAPIRequestMessage.init(payload:attachment:reference:URL:priority:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/DestinationController.swift",
+      "line": 17,
+      "symbol": "DestinationController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/DestinationController.swift",
+      "line": 19,
+      "symbol": "DestinationController.createNewDestination(forTrip:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 10,
+      "symbol": "controllerInterface",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 11,
+      "symbol": "controllerInterface.api",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 11,
+      "symbol": "controllerInterface.www",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 14,
+      "symbol": "SuperController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 15,
+      "symbol": "SuperController.interface",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 16,
+      "symbol": "SuperController.message",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 17,
+      "symbol": "SuperController.request",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 19,
+      "symbol": "SuperController.init(forInterface:request:message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 25,
+      "symbol": "SuperController.createResponse(payload:request:message:reference:interface:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/SuperController.swift",
+      "line": 61,
+      "symbol": "SuperController.createResponse(payload:reference:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 16,
+      "symbol": "TripController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 19,
+      "symbol": "TripController.createNewDestination()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 79,
+      "symbol": "TripController.inviteUser()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 96,
+      "symbol": "TripController.updateTrip()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 112,
+      "symbol": "TripController.addComment()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 146,
+      "symbol": "TripController.getTripTimeline(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 162,
+      "symbol": "TripController.acceptFollow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 183,
+      "symbol": "TripController.getUsersTrips()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 192,
+      "symbol": "TripController.getTrip()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Controllers/TripController.swift",
+      "line": 200,
+      "symbol": "TripController.createTrip()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/IntExtensions.swift",
+      "line": 13,
+      "symbol": "Int.boolValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/JSONExtensions.swift",
+      "line": 11,
+      "symbol": "JSON.asString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/RequestExtensions.swift",
+      "line": 11,
+      "symbol": "Request.getAPIRequestMessage()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/RequestExtensions.swift",
+      "line": 50,
+      "symbol": "Request.user()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/StringExtensions.swift",
+      "line": 11,
+      "symbol": "String.asJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 16,
+      "symbol": "triprAPIResponseStatusMessageData.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 23,
+      "symbol": "triprAPIResponseStatusMessageData.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 31,
+      "symbol": "triprAPIResponseMessage.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 46,
+      "symbol": "triprAPIResponseMessage.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 65,
+      "symbol": "triprAPIRequestMessage.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/TriprMessage+JSONConvertiable.swift",
+      "line": 78,
+      "symbol": "triprAPIRequestMessage.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 24,
+      "symbol": "User.doesFollowNeedAccept",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 30,
+      "symbol": "User.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 40,
+      "symbol": "User.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 48,
+      "symbol": "User.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 62,
+      "symbol": "User.makeBasicJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 79,
+      "symbol": "sessionCacheStruct",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 80,
+      "symbol": "sessionCacheStruct.user",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 81,
+      "symbol": "sessionCacheStruct.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 83,
+      "symbol": "sessionCacheStruct.init(user:timestamp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 93,
+      "symbol": "User.sessionCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 96,
+      "symbol": "User.persist(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 105,
+      "symbol": "User.unpersist(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 113,
+      "symbol": "User.fetchPersisted(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 165,
+      "symbol": "User.passwordHasher",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Extensions/UserExtensions.swift",
+      "line": 224,
+      "symbol": "User.make(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 9,
+      "symbol": "FileHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 12,
+      "symbol": "FileHandler.getFilesInDir(dirname:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 17,
+      "symbol": "FileHandler.createDir(dirName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 27,
+      "symbol": "FileHandler.uploadBase64File(user:file:filename:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 49,
+      "symbol": "FileHandler.uploadFile(user:request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Functions/FileHandler.swift",
+      "line": 77,
+      "symbol": "FileHandler.getCoordinatesForFile(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Middlewares/isAuthenticatedMiddleware.swift",
+      "line": 14,
+      "symbol": "isAuthenticatedMiddleware.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Middlewares/isAuthenticatedMiddleware.swift",
+      "line": 16,
+      "symbol": "isAuthenticatedMiddleware.respond(to:chainingTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": null,
+      "symbol": "Attachment",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": null,
+      "symbol": "Attachment",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 13,
+      "symbol": "Attachment",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 17,
+      "symbol": "Attachment.file",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 18,
+      "symbol": "Attachment.object",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 19,
+      "symbol": "Attachment.objectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 20,
+      "symbol": "Attachment.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 22,
+      "symbol": "Attachment.init(file:object:objectId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 29,
+      "symbol": "Attachment.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 38,
+      "symbol": "Attachment.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 45,
+      "symbol": "Attachment.getAsFile()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Attachment.swift",
+      "line": 52,
+      "symbol": "Attachment.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": null,
+      "symbol": "Comment",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": null,
+      "symbol": "Comment",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 14,
+      "symbol": "Comment",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 17,
+      "symbol": "Comment.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 24,
+      "symbol": "Comment.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 25,
+      "symbol": "Comment.writtenBy",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 26,
+      "symbol": "Comment.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 27,
+      "symbol": "Comment.commentedObject",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 28,
+      "symbol": "Comment.commentedObjectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 30,
+      "symbol": "Comment.getCreators()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 36,
+      "symbol": "Comment.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 47,
+      "symbol": "Comment.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 56,
+      "symbol": "Comment.init(text:writtenBy:commentedObject:commentedObjectId:timestamp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 67,
+      "symbol": "Comment.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Comment.swift",
+      "line": 75,
+      "symbol": "Comment.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": null,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": null,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": null,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": null,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 11,
+      "symbol": "DestinationErrors",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 19,
+      "symbol": "DestinationErrors.errorMessage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 31,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 32,
+      "symbol": "Destination.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 33,
+      "symbol": "Destination.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 36,
+      "symbol": "Destination.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 42,
+      "symbol": "Destination.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 46,
+      "symbol": "Destination.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 55,
+      "symbol": "Destination.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 64,
+      "symbol": "Destination.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 75,
+      "symbol": "Destination.destinationImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 84,
+      "symbol": "Destination.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 92,
+      "symbol": "Destination.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 101,
+      "symbol": "Destination.startDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 109,
+      "symbol": "Destination.endDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 118,
+      "symbol": "Destination.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 126,
+      "symbol": "Destination.trip",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 135,
+      "symbol": "Destination.places",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 136,
+      "symbol": "Destination._creator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 145,
+      "symbol": "Destination.creator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 155,
+      "symbol": "Destination._destinationImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 174,
+      "symbol": "Destination.init(startDate:endDate:isPrivate:creator:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 184,
+      "symbol": "Destination.isUserTiedToDestination(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 198,
+      "symbol": "Destination.updateDestinationFromJSON(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 206,
+      "symbol": "Destination.acceptFollowRequest(from:by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 216,
+      "symbol": "Destination.notifyFollowers(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 225,
+      "symbol": "Destination.getTripDataForUser(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 245,
+      "symbol": "Destination.inviteUser(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 249,
+      "symbol": "Destination.getUsersDestinations(user:requester:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 263,
+      "symbol": "Destination.createNewDestination(startDate:endDate:isPrivate:creator:trip:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 277,
+      "symbol": "Destination.doesFollowNeedAccept",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 314,
+      "symbol": "Destination.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 322,
+      "symbol": "Destination.makeJSONForFeed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 338,
+      "symbol": "Destination.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Destination.swift",
+      "line": 357,
+      "symbol": "Destination.createNotification(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": null,
+      "symbol": "Envy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": null,
+      "symbol": "Envy",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 12,
+      "symbol": "Envy",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 14,
+      "symbol": "Envy.enviedBy",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 15,
+      "symbol": "Envy.enviedObject",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 16,
+      "symbol": "Envy.enviedObjectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 17,
+      "symbol": "Envy.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 19,
+      "symbol": "Envy.init(enviedBy:enviedObject:enviedObjectId:timestamp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 26,
+      "symbol": "Envy.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 36,
+      "symbol": "Envy.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 44,
+      "symbol": "Envy.getEnviesForObject(Object:ID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 58,
+      "symbol": "Envy.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Envy.swift",
+      "line": 65,
+      "symbol": "Envy.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": null,
+      "symbol": "Feed",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": null,
+      "symbol": "Feed",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 13,
+      "symbol": "FeedType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 14,
+      "symbol": "FeedType.followAccepted",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 15,
+      "symbol": "FeedType.followDeclined",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 16,
+      "symbol": "FeedType.followRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 17,
+      "symbol": "FeedType.tripCreated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 18,
+      "symbol": "FeedType.tripFollowed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 19,
+      "symbol": "FeedType.tripUpdated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 20,
+      "symbol": "FeedType.commentAdded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 21,
+      "symbol": "FeedType.photoAdded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 22,
+      "symbol": "FeedType.destinationCreated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 23,
+      "symbol": "FeedType.destinationUpdated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 24,
+      "symbol": "FeedType.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 27,
+      "symbol": "Feed",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 30,
+      "symbol": "Feed.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 31,
+      "symbol": "Feed.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 34,
+      "symbol": "Feed.getFullFeedDataAsJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 93,
+      "symbol": "Feed.feedObjectType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 101,
+      "symbol": "Feed.feedObjectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 109,
+      "symbol": "Feed.entryObjectType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 117,
+      "symbol": "Feed.entryObjectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 125,
+      "symbol": "Feed.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 134,
+      "symbol": "Feed.feedType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 146,
+      "symbol": "Feed.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 148,
+      "symbol": "Feed.init(entryObjectType:entryObjectId:feedObjectType:feedObjectId:timestamp:feedType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 159,
+      "symbol": "Feed.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 191,
+      "symbol": "Feed.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 200,
+      "symbol": "Feed.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 238,
+      "symbol": "Feed.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Feed.swift",
+      "line": 245,
+      "symbol": "Feed.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": null,
+      "symbol": "FeedKeys",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 11,
+      "symbol": "FeedKeys",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 14,
+      "symbol": "FeedKeys.objectKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 15,
+      "symbol": "FeedKeys.feedId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 17,
+      "symbol": "FeedKeys.init(objectKey:feedId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 22,
+      "symbol": "FeedKeys.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/FeedKeys.swift",
+      "line": 27,
+      "symbol": "FeedKeys.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/File.swift",
       "line": null,
       "symbol": "File",
@@ -127,6 +2374,342 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": null,
+      "symbol": "Follow",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": null,
+      "symbol": "Follow",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 11,
+      "symbol": "Follow",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 12,
+      "symbol": "Follow.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 20,
+      "symbol": "Follow.object",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 21,
+      "symbol": "Follow.objectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 22,
+      "symbol": "Follow.follower",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 23,
+      "symbol": "Follow.accepted",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 25,
+      "symbol": "Follow.init(object:objectId:follower:accepted:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 33,
+      "symbol": "Follow.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 42,
+      "symbol": "Follow.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 49,
+      "symbol": "Follow.getFollowerUser()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 58,
+      "symbol": "Follow.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Follow.swift",
+      "line": 67,
+      "symbol": "Follow.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": null,
+      "symbol": "Notification",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": null,
+      "symbol": "Notification",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": null,
+      "symbol": "NotificationParameterData",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": null,
+      "symbol": "NotificationParameterData",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 11,
+      "symbol": "NotificationType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 21,
+      "symbol": "Notification",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 24,
+      "symbol": "Notification.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 25,
+      "symbol": "Notification.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 28,
+      "symbol": "Notification.owner",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 32,
+      "symbol": "Notification.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 38,
+      "symbol": "Notification.parameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 47,
+      "symbol": "Notification.receiver",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 56,
+      "symbol": "Notification.notificationType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 64,
+      "symbol": "Notification.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 72,
+      "symbol": "Notification.read",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 81,
+      "symbol": "Notification.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 83,
+      "symbol": "Notification.init(receiver:notificationType:timestamp:read:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 95,
+      "symbol": "Notification.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 104,
+      "symbol": "Notification.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 112,
+      "symbol": "Notification.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 119,
+      "symbol": "Notification.createNotification(receiver:notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 137,
+      "symbol": "Notification.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 144,
+      "symbol": "Notification.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 181,
+      "symbol": "NotificationParameterData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 184,
+      "symbol": "NotificationParameterData.notif",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 185,
+      "symbol": "NotificationParameterData.parameter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 186,
+      "symbol": "NotificationParameterData.relatedObject",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 187,
+      "symbol": "NotificationParameterData.relatedObjectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 189,
+      "symbol": "NotificationParameterData.notification",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 193,
+      "symbol": "NotificationParameterData.init(notifcation_id:parameter:relatedObject:relatedObjectId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 200,
+      "symbol": "NotificationParameterData.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 210,
+      "symbol": "NotificationParameterData.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 220,
+      "symbol": "NotificationParameterData.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Notification.swift",
+      "line": 227,
+      "symbol": "NotificationParameterData.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Post.swift",
       "line": null,
       "symbol": "Post",
@@ -197,6 +2780,286 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": null,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": null,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": null,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": null,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 11,
+      "symbol": "TripErrors",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 19,
+      "symbol": "TripErrors.errorMessage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 30,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 31,
+      "symbol": "Trip.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 32,
+      "symbol": "Trip.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 35,
+      "symbol": "Trip.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 41,
+      "symbol": "Trip.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 45,
+      "symbol": "Trip.makeRow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 54,
+      "symbol": "Trip.init(row:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 63,
+      "symbol": "Trip.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 74,
+      "symbol": "Trip.tripImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 83,
+      "symbol": "Trip.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 91,
+      "symbol": "Trip.isPrivate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 100,
+      "symbol": "Trip.startDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 108,
+      "symbol": "Trip.endDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 117,
+      "symbol": "Trip.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 125,
+      "symbol": "Trip.destinations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 135,
+      "symbol": "Trip.places",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 136,
+      "symbol": "Trip._creator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 145,
+      "symbol": "Trip.creator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 155,
+      "symbol": "Trip._tripImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 189,
+      "symbol": "Trip.init(tripStartDate:tripEndDate:isPrivate:creator:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 199,
+      "symbol": "Trip.isUserTiedToTrip(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 213,
+      "symbol": "Trip.updateTripFromJSON(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 221,
+      "symbol": "Trip.acceptFollowRequest(from:by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 231,
+      "symbol": "Trip.notifyFollowers(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 240,
+      "symbol": "Trip.getTripDataForUser(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 260,
+      "symbol": "Trip.inviteUser(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 264,
+      "symbol": "Trip.getUsersTrips(user:requester:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 278,
+      "symbol": "Trip.createNewTrip(tripStartDate:tripEndDate:isPrivate:creator:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 295,
+      "symbol": "Trip.doesFollowNeedAccept",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 332,
+      "symbol": "Trip.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 340,
+      "symbol": "Trip.makeJSONForFeed()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 356,
+      "symbol": "Trip.makeJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/Trip.swift",
+      "line": 376,
+      "symbol": "Trip.createNotification(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": null,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
       "line": null,
       "symbol": "User",
@@ -215,173 +3078,1020 @@
       "line": null,
       "symbol": "User",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": null,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": null,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": null,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 25,
+      "symbol": "baseUserData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 26,
+      "symbol": "baseUserData.profileImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 27,
+      "symbol": "baseUserData.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
       "line": 28,
-      "symbol": "User",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "baseUserData.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 29,
+      "symbol": "baseUserData.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 30,
+      "symbol": "baseUserData.firstname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
       "line": 31,
-      "symbol": "User.username",
+      "symbol": "baseUserData.lastname",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
       "line": 32,
-      "symbol": "User.password",
+      "symbol": "baseUserData.isPrivate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 33,
+      "line": 37,
+      "symbol": "User.profilePicture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 45,
       "symbol": "User.firstname",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 34,
+      "line": 53,
+      "symbol": "User.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 61,
       "symbol": "User.lastname",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 35,
+      "line": 69,
       "symbol": "User.email",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 36,
-      "symbol": "User.profilePhoto",
+      "line": 77,
+      "symbol": "User.isPrivate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 70,
+      "line": 86,
+      "symbol": "User.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 95,
+      "symbol": "User.profileImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 115,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 116,
+      "symbol": "User.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 117,
+      "symbol": "User.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 119,
+      "symbol": "User._password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 121,
+      "symbol": "User.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 133,
+      "symbol": "User.getBaseUserData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 145,
+      "symbol": "User.setDataLevel(key:level:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 153,
+      "symbol": "User.setDataLevel(key:levels:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 173,
+      "symbol": "User.setProfileImage(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 201,
+      "symbol": "User.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
+      "line": 217,
       "symbol": "User.init(username:email:password:firstname:lastname:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 141,
-      "symbol": "User.init(json:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": null,
+      "symbol": "Attachable",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 150,
-      "symbol": "User.makeJSON()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 12,
+      "symbol": "Attachable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 168,
-      "symbol": "sessionCacheStruct",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 169,
-      "symbol": "sessionCacheStruct.user",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 14,
+      "symbol": "Attachable.attachments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 170,
-      "symbol": "sessionCacheStruct.timestamp",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 15,
+      "symbol": "Attachable.addAttachment(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 16,
+      "symbol": "Attachable.removeAttachment(file:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 17,
+      "symbol": "Attachable.removeAttachment(attachment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 23,
+      "symbol": "Attachable.attachments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 172,
-      "symbol": "sessionCacheStruct.init(user:timestamp:)",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 35,
+      "symbol": "Attachable.addAttachment(file:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 182,
-      "symbol": "User.sessionCache",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 185,
-      "symbol": "User.persist(for:)",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 41,
+      "symbol": "Attachable.removeAttachment(attachment:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 194,
-      "symbol": "User.unpersist(for:)",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Attachable.swift",
+      "line": 45,
+      "symbol": "Attachable.removeAttachment(file:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 202,
-      "symbol": "User.fetchPersisted(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": null,
+      "symbol": "Commentable",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 228,
-      "symbol": "User.passwordHasher",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 10,
+      "symbol": "Commentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Models/User.swift",
-      "line": 279,
-      "symbol": "Request.user()",
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 12,
+      "symbol": "Commentable.comments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 13,
+      "symbol": "Commentable.addComment(by:commment:timestamp:attachment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 14,
+      "symbol": "Commentable.removeComment(comment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 19,
+      "symbol": "Commentable.comments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 31,
+      "symbol": "Commentable.addComment(by:commment:timestamp:attachment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Commentable.swift",
+      "line": 40,
+      "symbol": "Commentable.removeComment(comment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": null,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 13,
+      "symbol": "DataACL",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 14,
+      "symbol": "DataACL.guest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 14,
+      "symbol": "DataACL.json",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 14,
+      "symbol": "DataACL.priv",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 14,
+      "symbol": "DataACL.row",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 17,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 21,
+      "symbol": "DataStorage.dataStorage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 22,
+      "symbol": "DataStorage.dataStorageACL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 23,
+      "symbol": "DataStorage.getData(level:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 24,
+      "symbol": "DataStorage.getDataFor(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 25,
+      "symbol": "DataStorage.initDatalevels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 26,
+      "symbol": "DataStorage.setDataLevel(key:level:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 27,
+      "symbol": "DataStorage.setDataLevel(key:levels:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 28,
+      "symbol": "DataStorage.getJSONFromStorageData(levels:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 33,
+      "symbol": "DataStorage.getJSONFromStorageData(levels:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 43,
+      "symbol": "DataStorage.getDataFor(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 77,
+      "symbol": "DataStorage.getData(level:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 89,
+      "symbol": "DataStorage.setDataLevel(key:level:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/DataStorageProtocol.swift",
+      "line": 97,
+      "symbol": "DataStorage.setDataLevel(key:levels:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": null,
+      "symbol": "Envyable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 15,
+      "symbol": "Envyable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 17,
+      "symbol": "Envyable.envies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 18,
+      "symbol": "Envyable.addEnvyBy(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 19,
+      "symbol": "Envyable.removeEnvyBy(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 20,
+      "symbol": "Envyable.removeEnvy(envy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 28,
+      "symbol": "Envyable.objectType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 41,
+      "symbol": "Envyable.envies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 51,
+      "symbol": "Envyable.isObjectEnviedBy(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 65,
+      "symbol": "Envyable.addEnvyBy(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 71,
+      "symbol": "Envyable.removeEnvy(envy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Envyable.swift",
+      "line": 75,
+      "symbol": "Envyable.removeEnvyBy(user:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": null,
+      "symbol": "Followable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
       "line": 11,
+      "symbol": "FollowableErrors",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 19,
       "symbol": "Followable",
       "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 20,
+      "symbol": "Followable.followers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 21,
+      "symbol": "Followable.following",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 22,
+      "symbol": "Followable.doesFollowNeedAccept",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 23,
+      "symbol": "Followable.startFollowing(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 24,
+      "symbol": "Followable.stopFollowing(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 25,
+      "symbol": "Followable.acceptFollow(follower:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 26,
+      "symbol": "Followable.declineFollow(follower:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 34,
+      "symbol": "Followable.followers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 49,
+      "symbol": "Followable.following",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 63,
+      "symbol": "Followable.followingRequests",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 78,
+      "symbol": "Followable.followerRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 93,
+      "symbol": "Followable.startFollowing(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 107,
+      "symbol": "Followable.stopFollowing(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 121,
+      "symbol": "Followable.acceptFollow(follower:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 137,
+      "symbol": "Followable.declineFollow(follower:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 151,
+      "symbol": "Followable.followRequestExists(followerId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Followable.swift",
+      "line": 160,
+      "symbol": "Followable.followExists(followerId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": null,
+      "symbol": "Notifiable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": 11,
+      "symbol": "Notifiable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": 12,
+      "symbol": "Notifiable.notifications",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": 13,
+      "symbol": "Notifiable.createNotification(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": 18,
+      "symbol": "Notifiable.notifications",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Notifiable.swift",
+      "line": 29,
+      "symbol": "Notifiable.createNotification(notificationType:parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": null,
+      "symbol": "ObjectIdentifiable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 12,
+      "symbol": "ObjectIdentifiable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 13,
+      "symbol": "ObjectIdentifiable.objectType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 14,
+      "symbol": "ObjectIdentifiable.objectIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 15,
+      "symbol": "ObjectIdentifiable.objectKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 16,
+      "symbol": "ObjectIdentifiable.objectType",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 21,
+      "symbol": "ObjectIdentifiable.objectKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 26,
+      "symbol": "ObjectIdentifiable.objectType",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/ObjectIdentifiable.swift",
+      "line": 31,
+      "symbol": "ObjectIdentifiable.objectType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": null,
+      "symbol": "Timelineable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 11,
+      "symbol": "Timelineable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 13,
+      "symbol": "Timelineable.createFeedData(feedObjectType:feedObjectId:timestamp:feedType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 14,
+      "symbol": "Timelineable.getTimelineItems(startIndex:numberOfFeeds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 15,
+      "symbol": "Timelineable.getTimelineItemsAsJSON(startIndex:numberOfFeeds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 16,
+      "symbol": "Timelineable.createFeedData(feedObjectType:feedObjectId:timestamp:feedType:users:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 22,
+      "symbol": "Timelineable.getTimelineItemsAsJSON(startIndex:numberOfFeeds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 41,
+      "symbol": "Timelineable.getTimelineItems(startIndex:numberOfFeeds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 57,
+      "symbol": "Timelineable.createFeedForMe(feedObjectType:feedObjectId:timestamp:feedType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 75,
+      "symbol": "Timelineable.createFeedData(feedObjectType:feedObjectId:timestamp:feedType:users:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Protocols/Timelineable.swift",
+      "line": 107,
+      "symbol": "Timelineable.createFeedData(feedObjectType:feedObjectId:timestamp:feedType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Follow/FollowRoutes.swift",
+      "line": 18,
+      "symbol": "FollowRoutes.followable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Follow/FollowRoutes.swift",
+      "line": 20,
+      "symbol": "FollowRoutes.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Follow/FollowRoutes.swift",
+      "line": 44,
+      "symbol": "FollowRoutes.acceptFollow(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Follow/FollowRoutes.swift",
+      "line": 68,
+      "symbol": "FollowRoutes.follow(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Follow/FollowRoutes.swift",
+      "line": 90,
+      "symbol": "FollowRoutes.thisisatest(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 61,
+      "symbol": "TripRoutes.createNewDestination(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 71,
+      "symbol": "TripRoutes.getUsersTrip(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 76,
+      "symbol": "TripRoutes.acceptFollow(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 81,
+      "symbol": "TripRoutes.getTripTimeline(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 91,
+      "symbol": "TripRoutes.addComment(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 101,
+      "symbol": "TripRoutes.updateTrip(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 111,
+      "symbol": "TripRoutes.inviteUser(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 120,
+      "symbol": "TripRoutes.followTrip(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 149,
+      "symbol": "TripRoutes.createTrip(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/Trip/TripRoutes.swift",
+      "line": 159,
+      "symbol": "TripRoutes.getTrip(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/User/UserRoutes.swift",
+      "line": 104,
+      "symbol": "UserRoutes.getOwnTimeline(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/User/UserRoutes.swift",
+      "line": 255,
+      "symbol": "UserRoutes.testing(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/API/V1/v1.swift",
+      "line": 17,
+      "symbol": "RoutesV1.drop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/Routes.swift",
       "line": 6,
       "symbol": "Droplet.setupRoutes()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/Routes.swift",
-      "line": 37,
-      "symbol": "Droplet.loginUser(request:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/infra/Documents/GitHub/vegas/Sources/App/Routes/Routes.swift",
-      "line": 42,
-      "symbol": "Droplet.registerUser(request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

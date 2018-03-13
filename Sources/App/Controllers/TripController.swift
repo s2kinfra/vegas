@@ -15,6 +15,67 @@ import MySQL
 
 final class TripController : SuperController {
     
+    
+    func createNewDestination() throws -> ResponseRepresentable {
+        do {
+            let me = try self.request.user()
+            guard let trip = try? request.parameters.next(Trip.self) else {
+                return try self.createResponse(payload: (self.request.json)!, status: (.error, "Trip doesnt exists"))
+            }
+            
+            let destData = try createNewDestinationPayload.init(json: (self.message?.payload.asJSON())!)
+            
+            let dest = try Destination.createNewDestination(arrivalDate: destData.arrivalDate,
+                                                            departureDate: destData.departureDate,
+                                                            isPrivate: destData.isPrivate,
+                                                            creator: me,
+                                                            trip: trip.id?.int,
+                                                            name: destData.name)
+            
+            ///create , save and add the destination image if it exists
+            if let image = destData.destinationImage {
+                guard let base64data = Data(base64Encoded: image.base64, options: .ignoreUnknownCharacters) else {
+                    throw TriprAPIMessageError.invalidData(field: "destinationImage")
+                }
+                let file = try FileHandler.uploadBase64File(user:me, file: base64data, filename: image.filename)
+                dest.destinationImage = file.id?.int
+                try dest.save()
+            }
+            
+            ///All notification stuff and that
+            //            we want to add this event to the trips timeline
+            try trip.createFeedForMe(feedObjectType: dest.objectType, feedObjectId: dest.objectIdentifier, timestamp: Date().timeIntervalSince1970, feedType: .destinationCreated)
+            
+            //            as well as the trips followers
+            var myFollowers = [User]()
+            for follower in (trip.followers) {
+                let user = try follower.getFollowerUser()
+                myFollowers.append(user)
+            }
+            
+            try me.createFeedData(feedObjectType: dest.objectType, feedObjectId: dest.objectIdentifier, timestamp: Date().timeIntervalSince1970, feedType: .destinationCreated, users: myFollowers)
+            
+            ///Create notifications for them as well
+            try trip.notifyFollowers(notificationType: .DestinationAdded ,
+                                     parameters: [(1, trip.objectType, trip.objectIdentifier.int!),
+                                                  (2, dest.objectType, dest.objectIdentifier.int!),
+                                                  (3, me.objectType, me.objectIdentifier.int!)])
+            
+            
+            return try self.createResponse(payload: try dest.makeJSON(), status: (.ok, "Destination created"))
+            
+        }catch let error as TriprAPIMessageError{
+            return try self.createResponse(payload: "", status: (.error, error.getErrorCode()))
+        }catch let error as MySQLError {
+            var errorReason = error.reason
+            if error.code == MySQL.MySQLError.Code.dupEntry {
+                errorReason = "Destination already exists"
+            }
+            return try self.createResponse(payload: "", status: (.error, errorReason))
+        }
+        
+    }
+    
     func inviteUser() throws -> ResponseRepresentable {
         let me = try request.user()
         guard let trip = try? request.parameters.next(Trip.self) else {

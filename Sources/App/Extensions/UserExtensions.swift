@@ -23,7 +23,7 @@ extension User : Notifiable {
 extension User : Followable {
     var doesFollowNeedAccept: Bool {
         get {
-            return self.isPrivate!
+            return self.isPrivate!.boolValue
         }
     }
     

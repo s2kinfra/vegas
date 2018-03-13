@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Timelineable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Timelineable" class="dashAnchor"></a>
+    <a title="Timelineable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Vegas Docs</a> (16% documented)</p>
+        <p class="header-right"><a href="https://github.com/s2kinfra/vegas"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Vegas Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Timelineable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Comment.html">Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DestinationController.html">DestinationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Envy.html">Envy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Feed.html">Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeedKeys.html">FeedKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File.html">File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileHandler.html">FileHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Follow.html">Follow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FollowRoutes.html">FollowRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NotificationParameterData.html">NotificationParameterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostController.html">PostController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoutesV1.html">RoutesV1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperController.html">SuperController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Trip.html">Trip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TripController.html">TripController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TripRoutes.html">TripRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRoutes.html">UserRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/isAuthenticatedMiddleware.html">isAuthenticatedMiddleware</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataACL.html">DataACL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DestinationErrors.html">DestinationErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedType.html">FeedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FollowableErrors.html">FollowableErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TripErrors.html">TripErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriprAPIMessageError.html">TriprAPIMessageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriprAPIMessagePriority.html">TriprAPIMessagePriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserErrors.html">UserErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/controllerInterface.html">controllerInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/fileType.html">fileType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/httpContentTypes.html">httpContentTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/httpMethod.html">httpMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/responseStatusCode.html">responseStatusCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Config.html">Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Droplet.html">Droplet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Request.html">Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Attachable.html">Attachable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Commentable.html">Commentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DataStorage.html">DataStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Envyable.html">Envyable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Followable.html">Followable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Notifiable.html">Notifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ObjectIdentifiable.html">ObjectIdentifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Timelineable.html">Timelineable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriprAPIMessageData.html">TriprAPIMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriprAPIRequestMessageData.html">TriprAPIRequestMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/triprAPIResponseMessageData.html">triprAPIResponseMessageData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/UserPayloadLogin.html">UserPayloadLogin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserPayloadRegister.html">UserPayloadRegister</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/addCommentPayload.html">addCommentPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/attachmentPayload.html">attachmentPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/baseUserData.html">baseUserData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/createNewDestinationPayload.html">createNewDestinationPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/createNewTripPayload.html">createNewTripPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ownTimelineRequestPayload.html">ownTimelineRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/sessionCacheStruct.html">sessionCacheStruct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/tripTimelineRequestPayload.html">tripTimelineRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIRequestMessage.html">triprAPIRequestMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIResponseMessage.html">triprAPIResponseMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIResponseStatusMessageData.html">triprAPIResponseStatusMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/updateDestinationPayload.html">updateDestinationPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/updateTripPayload.html">updateTripPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/userTimelineRequestPayload.html">userTimelineRequestPayload</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Timelineable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Timelineable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Followable.html">Followable</a></span><span class="p">,</span> <span class="kt">Model</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App12TimelineableP14createFeedDataySS14feedObjectType_4Node10IdentifierV0fG2IdSd9timestampAA0dH0O0fH0tF"></a>
+                    <a name="//apple_ref/swift/Method/createFeedData(feedObjectType:feedObjectId:timestamp:feedType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App12TimelineableP14createFeedDataySS14feedObjectType_4Node10IdentifierV0fG2IdSd9timestampAA0dH0O0fH0tF">createFeedData(feedObjectType:feedObjectId:timestamp:feedType:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createFeedData</span><span class="p">(</span><span class="n">feedObjectType</span> <span class="nv">_feedObjectType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">feedObjectId</span> <span class="nv">_feedObjectId</span> <span class="p">:</span> <span class="kt">Identifier</span><span class="p">,</span> <span class="n">timestamp</span> <span class="nv">_time</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">feedType</span> <span class="nv">_type</span> <span class="p">:</span> <span class="kt"><a href="../Enums/FeedType.html">FeedType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App12TimelineableP16getTimelineItemsSayAA4FeedCGSi10startIndex_Si13numberOfFeedstKF"></a>
+                    <a name="//apple_ref/swift/Method/getTimelineItems(startIndex:numberOfFeeds:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App12TimelineableP16getTimelineItemsSayAA4FeedCGSi10startIndex_Si13numberOfFeedstKF">getTimelineItems(startIndex:numberOfFeeds:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTimelineItems</span><span class="p">(</span> <span class="n">startIndex</span> <span class="nv">_idx</span> <span class="p">:</span> <span class="kt">Int</span> <span class="p">,</span> <span class="n">numberOfFeeds</span> <span class="nv">_limitation</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Feed.html">Feed</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App12TimelineableP22getTimelineItemsAsJSON0G0AEVSi10startIndex_Si13numberOfFeedstKF"></a>
+                    <a name="//apple_ref/swift/Method/getTimelineItemsAsJSON(startIndex:numberOfFeeds:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App12TimelineableP22getTimelineItemsAsJSON0G0AEVSi10startIndex_Si13numberOfFeedstKF">getTimelineItemsAsJSON(startIndex:numberOfFeeds:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTimelineItemsAsJSON</span><span class="p">(</span> <span class="n">startIndex</span> <span class="nv">_idx</span> <span class="p">:</span> <span class="kt">Int</span> <span class="p">,</span> <span class="n">numberOfFeeds</span> <span class="nv">_limitation</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">JSON</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App12TimelineableP14createFeedDataySS14feedObjectType_4Node10IdentifierV0fG2IdSd9timestampAA0dH0O0fH0SayAA4UserCG5userstKF"></a>
+                    <a name="//apple_ref/swift/Method/createFeedData(feedObjectType:feedObjectId:timestamp:feedType:users:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App12TimelineableP14createFeedDataySS14feedObjectType_4Node10IdentifierV0fG2IdSd9timestampAA0dH0O0fH0SayAA4UserCG5userstKF">createFeedData(feedObjectType:feedObjectId:timestamp:feedType:users:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createFeedData</span><span class="p">(</span><span class="n">feedObjectType</span> <span class="nv">_feedObjectType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span><span class="n">feedObjectId</span> <span class="nv">_feedObjectId</span> <span class="p">:</span> <span class="kt">Identifier</span><span class="p">,</span><span class="n">timestamp</span> <span class="nv">_time</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">,</span><span class="n">feedType</span> <span class="nv">_type</span> <span class="p">:</span> <span class="kt"><a href="../Enums/FeedType.html">FeedType</a></span><span class="p">,</span><span class="nv">users</span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/User.html">User</a></span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App12TimelineablePAAE15createFeedForMeySS14feedObjectType_4Node10IdentifierV0gH2IdSd9timestampAA0dI0O0gI0tKF"></a>
+                    <a name="//apple_ref/swift/Method/createFeedForMe(feedObjectType:feedObjectId:timestamp:feedType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App12TimelineablePAAE15createFeedForMeySS14feedObjectType_4Node10IdentifierV0gH2IdSd9timestampAA0dI0O0gI0tKF">createFeedForMe(feedObjectType:feedObjectId:timestamp:feedType:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createFeedForMe</span><span class="p">(</span><span class="n">feedObjectType</span> <span class="nv">_feedObjectType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="n">feedObjectId</span> <span class="nv">_feedObjectId</span> <span class="p">:</span> <span class="kt">Identifier</span><span class="p">,</span>
+                     <span class="n">timestamp</span> <span class="nv">_time</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+                     <span class="n">feedType</span> <span class="nv">_type</span> <span class="p">:</span> <span class="kt"><a href="../Enums/FeedType.html">FeedType</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://fabularis.dk" target="_blank" rel="external">Daniel</a>. All rights reserved. (Last updated: 2018-03-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

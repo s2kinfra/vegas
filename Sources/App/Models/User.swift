@@ -74,13 +74,12 @@ extension User {
             return getDataFor(key: "email")
         }
     }
-    var isPrivate : Bool? {
+    var isPrivate : Int? {
         set(newValue) {
             self.dataStorage["isPrivate"] = newValue
         }
         get {
-            let bool : Int = getDataFor(key: "isPrivate")!
-            return bool.boolValue
+            return getDataFor(key: "isPrivate")!
         }
     }
     var password : String? {
@@ -137,7 +136,7 @@ final class User : Model, DataStorage {
                                          email: self.email!,
                                          firstname: self.firstname!,
                                          lastname: self.lastname!,
-                                         isPrivate: self.isPrivate!)
+                                         isPrivate: self.isPrivate!.boolValue)
         
         return userData
     }
@@ -223,7 +222,7 @@ final class User : Model, DataStorage {
             self.password = password
             self.firstname = firstname
             self.lastname = lastname
-            self.isPrivate = true
+//            self.isPrivate = 1
 //            self.profilePicture = nil
             initDatalevels()
         }catch {

@@ -9,23 +9,23 @@
 struct updateDestinationPayload : JSONConvertible {
     var name : String
     var isPrivate : Bool
-    var destinationStartDate : Double
-    var destinationEndDate : Double
+    var arrivalDate : Double
+    var departureDate : Double
     var destinationImage : attachmentPayload?
     
-    init(isPrivate _isPrivate: Bool,destinationStartDate _destinationStartDate : Double,destinationEndDate _destinationEndDate : Double, name _name : String, destinationImage _image : attachmentPayload? = nil ) {
+    init(isPrivate _isPrivate: Bool,arrivalDate _arrivalDate : Double,departureDate _departureDate : Double, name _name : String, destinationImage _image : attachmentPayload? = nil ) {
         
         self.isPrivate = _isPrivate
-        self.destinationStartDate = _destinationStartDate
-        self.destinationEndDate = _destinationEndDate
+        self.arrivalDate = _arrivalDate
+        self.departureDate = _departureDate
         self.name = _name
     }
     
     func makeJSON() throws -> JSON {
         var json = JSON()
         try json.set("isPrivate", isPrivate)
-        try json.set("destinationStartDate", destinationStartDate)
-        try json.set("destinationEndDate", destinationEndDate)
+        try json.set("arrivalDate", arrivalDate)
+        try json.set("departureDate", departureDate)
         try json.set("name", name)
         try json.set("destinationImage", destinationImage)
         
@@ -37,19 +37,19 @@ struct updateDestinationPayload : JSONConvertible {
         guard let isPrivate : Bool = try json.get("isPrivate") else {
             throw TriprAPIMessageError.missingData(field: "isPrivate")
         }
-        guard let destinationStartDate : Double = try json.get("startDate") else {
-            throw TriprAPIMessageError.missingData(field: "startDate")
+        guard let arrivalDate : Double = try json.get("arrivalDate") else {
+            throw TriprAPIMessageError.missingData(field: "arrivalDate")
         }
-        guard let destinationEndDate : Double = try json.get("endDate") else {
-            throw TriprAPIMessageError.missingData(field: "endDate")
+        guard let departureDate : Double = try json.get("departureDate") else {
+            throw TriprAPIMessageError.missingData(field: "departureDate")
         }
         guard let name : String = try json.get("name") else {
             throw TriprAPIMessageError.missingData(field: "name")
         }
         self.name = name
         self.isPrivate = isPrivate
-        self.destinationStartDate = destinationStartDate
-        self.destinationEndDate = destinationEndDate
+        self.arrivalDate = arrivalDate
+        self.departureDate = departureDate
         self.destinationImage = try json.get("destinationImage")
     }
     
@@ -59,15 +59,15 @@ struct createNewDestinationPayload  : JSONConvertible{
     
     var name : String
     var isPrivate : Bool
-    var destinationStartDate : Double
-    var destinationEndDate : Double
+    var arrivalDate : Double
+    var departureDate : Double
     var destinationImage : attachmentPayload?
     
-    init(isPrivate _isPrivate: Bool,destinationStartDate _destinationStartDate : Double,destinationEndDate _destinationEndDate : Double, name _name : String,destinationImage _image : attachmentPayload? = nil ) {
+    init(isPrivate _isPrivate: Bool,arrivalDate _arrivalDate : Double,departureDate _departureDate : Double, name _name : String,destinationImage _image : attachmentPayload? = nil ) {
         
         self.isPrivate = _isPrivate
-        self.destinationStartDate = _destinationStartDate
-        self.destinationEndDate = _destinationEndDate
+        self.arrivalDate = _arrivalDate
+        self.departureDate = _departureDate
         self.name = _name
         self.destinationImage = _image
     }
@@ -75,8 +75,8 @@ struct createNewDestinationPayload  : JSONConvertible{
     func makeJSON() throws -> JSON {
         var json = JSON()
         try json.set("isPrivate", isPrivate)
-        try json.set("destinationStartDate", destinationStartDate)
-        try json.set("destinationEndDate", destinationEndDate)
+        try json.set("arrivalDate", arrivalDate)
+        try json.set("departureDate", departureDate)
         try json.set("name", name)
         try json.set("destinationImage", destinationImage)
         
@@ -88,11 +88,11 @@ struct createNewDestinationPayload  : JSONConvertible{
         guard let isPrivate : Bool = try json.get("isPrivate") else {
             throw TriprAPIMessageError.missingData(field: "isPrivate")
         }
-        guard let destinationStartDate : Double = try json.get("startDate") else {
-            throw TriprAPIMessageError.missingData(field: "startDate")
+        guard let arrivalDate : Double = try json.get("arrivalDate") else {
+            throw TriprAPIMessageError.missingData(field: "arrivalDate")
         }
-        guard let destinationEndDate : Double = try json.get("endDate") else {
-            throw TriprAPIMessageError.missingData(field: "endDate")
+        guard let departureDate : Double = try json.get("departureDate") else {
+            throw TriprAPIMessageError.missingData(field: "departureDate")
         }
         guard let name : String = try json.get("name") else {
             throw TriprAPIMessageError.missingData(field: "name")
@@ -100,8 +100,8 @@ struct createNewDestinationPayload  : JSONConvertible{
         self.name = name
         self.isPrivate = isPrivate
         self.destinationImage = try json.get("destinationImage")
-        self.destinationStartDate = destinationStartDate
-        self.destinationEndDate = destinationEndDate
+        self.arrivalDate = arrivalDate
+        self.departureDate = departureDate
     }
 }
 

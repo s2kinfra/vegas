@@ -181,7 +181,7 @@ class UserRoutes {
             try me.acceptFollow(follower: follower.id!)
             
             ///if Im not private then the follower can tell his followers that he now is following me
-            if !me.isPrivate! {
+            if !me.isPrivate!.boolValue {
                 follower.createFeedData(feedObjectType: me.objectType, feedObjectId: me.objectIdentifier, timestamp: Date().timeIntervalSince1970, feedType: .followAccepted)
             }
             

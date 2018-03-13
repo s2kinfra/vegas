@@ -122,7 +122,16 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             return getDataFor(key: "timestamp")
         }
     }
-    var destinations : [String]?//should of course have own type, just for prototyping
+    var destinations : [Destination] {
+        get {
+            do {
+                let dest = try Destination.makeQuery().filter("trip", .equals, self.id?.int!).all()
+                return dest
+            }catch {
+                return [Destination]()
+            }
+        }
+    }
     var places : [String]? //should of course have own type, just for prototyping
     var _creator : User {
         get {
@@ -356,6 +365,7 @@ extension Trip: JSONConvertible {
             let user = try follower.getFollowerUser()
             JSONfollowers.append(try user.makeBasicJSON())
         }
+        try json.set("destinations", self.destinations)
         try json.set("followers", JSONfollowers)
         try json.set("tripImage", _tripImage)
         try json.set("id",self.id!)

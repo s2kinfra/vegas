@@ -40,6 +40,11 @@ final class RoutesV1: RouteCollection {
                     let tripRoutes = TripRoutes.init()
                     tripRoutes.addRoutes(routeBuilder: trip)
                 }
+                
+                v1.group("destination") { dest in
+                    let destRoutes = DestinationRoutes.init()
+                    destRoutes.addRoutes(routeBuilder: dest)
+                }
             }
         }
     }

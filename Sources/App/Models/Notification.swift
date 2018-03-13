@@ -13,6 +13,8 @@ enum NotificationType : Int {
     case TripCreated = 20,
          TripUpdated = 21,
          CommentAdded = 30,
+         DestinationAdded = 40,
+         DestinationUpdated = 41,
          FollowRequest = 50,
          FollowAccepted = 51
 }

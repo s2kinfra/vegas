@@ -69,6 +69,19 @@ final class Feed : Model,DataStorage {
             let trip = try Trip.find(self.feedObjectId!)
             try subObject.set("trip", trip)
             try json.set("feedObject", subObject)
+            
+        case "App.Destination" :
+            var subObject = JSON()
+            let dest = try Destination.find(self.feedObjectId!)
+            try subObject.set("destination", dest)
+            try json.set("feedObject", subObject)
+            
+        case "App.User" :
+            var subObject = JSON()
+            let user = try User.find(self.entryObjectId!)
+            try subObject.set("user", try user?.makeBasicJSON())
+            try json.set("entryObject", subObject)
+            
         default:
             print("feed object : \(self.feedObjectType!) hasnt been mapped")
             abort()

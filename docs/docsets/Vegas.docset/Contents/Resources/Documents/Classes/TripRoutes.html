@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TripRoutes Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TripRoutes" class="dashAnchor"></a>
+    <a title="TripRoutes Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Vegas Docs</a> (16% documented)</p>
+        <p class="header-right"><a href="https://github.com/s2kinfra/vegas"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Vegas Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TripRoutes Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Attachment.html">Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Comment.html">Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DestinationController.html">DestinationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Envy.html">Envy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Feed.html">Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FeedKeys.html">FeedKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File.html">File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileHandler.html">FileHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Follow.html">Follow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FollowRoutes.html">FollowRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NotificationParameterData.html">NotificationParameterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Post/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostController.html">PostController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RoutesV1.html">RoutesV1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperController.html">SuperController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Trip.html">Trip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TripController.html">TripController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TripRoutes.html">TripRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRoutes.html">UserRoutes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/isAuthenticatedMiddleware.html">isAuthenticatedMiddleware</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataACL.html">DataACL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DestinationErrors.html">DestinationErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedType.html">FeedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FollowableErrors.html">FollowableErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TripErrors.html">TripErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriprAPIMessageError.html">TriprAPIMessageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriprAPIMessagePriority.html">TriprAPIMessagePriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserErrors.html">UserErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/controllerInterface.html">controllerInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/fileType.html">fileType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/httpContentTypes.html">httpContentTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/httpMethod.html">httpMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/responseStatusCode.html">responseStatusCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Config.html">Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Droplet.html">Droplet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Request.html">Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Attachable.html">Attachable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Commentable.html">Commentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DataStorage.html">DataStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Envyable.html">Envyable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Followable.html">Followable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Notifiable.html">Notifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ObjectIdentifiable.html">ObjectIdentifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Timelineable.html">Timelineable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriprAPIMessageData.html">TriprAPIMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriprAPIRequestMessageData.html">TriprAPIRequestMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/triprAPIResponseMessageData.html">triprAPIResponseMessageData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/UserPayloadLogin.html">UserPayloadLogin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserPayloadRegister.html">UserPayloadRegister</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/addCommentPayload.html">addCommentPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/attachmentPayload.html">attachmentPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/baseUserData.html">baseUserData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/createNewDestinationPayload.html">createNewDestinationPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/createNewTripPayload.html">createNewTripPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ownTimelineRequestPayload.html">ownTimelineRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/sessionCacheStruct.html">sessionCacheStruct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/tripTimelineRequestPayload.html">tripTimelineRequestPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIRequestMessage.html">triprAPIRequestMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIResponseMessage.html">triprAPIResponseMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/triprAPIResponseStatusMessageData.html">triprAPIResponseStatusMessageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/updateDestinationPayload.html">updateDestinationPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/updateTripPayload.html">updateTripPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/userTimelineRequestPayload.html">userTimelineRequestPayload</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TripRoutes</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TripRoutes</span></code></pre>
+
+                </div>
+              </div>
+            <p>Class for handling user routes and their functionality</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC03addC0y7Routing12RouteBuilder_p05routeG0_tF"></a>
+                    <a name="//apple_ref/swift/Method/addRoutes(routeBuilder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC03addC0y7Routing12RouteBuilder_p05routeG0_tF">addRoutes(routeBuilder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add User routes /api/vX/trip</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addRoutes</span><span class="p">(</span><span class="nv">routeBuilder</span><span class="p">:</span> <span class="kt">RouteBuilder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC20createNewDestination4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/createNewDestination(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC20createNewDestination4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">createNewDestination(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createNewDestination</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC08getUsersB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/getUsersTrip(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC08getUsersB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">getUsersTrip(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getUsersTrip</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC12acceptFollow4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/acceptFollow(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC12acceptFollow4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">acceptFollow(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">acceptFollow</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC03getB8Timeline4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/getTripTimeline(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC03getB8Timeline4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">getTripTimeline(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTripTimeline</span><span class="p">(</span><span class="nv">request</span> <span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC10addComment4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/addComment(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC10addComment4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">addComment(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addComment</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC06updateB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/updateTrip(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC06updateB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">updateTrip(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateTrip</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC10inviteUser4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/inviteUser(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC10inviteUser4HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">inviteUser(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">inviteUser</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC06followB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/followTrip(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC06followB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">followTrip(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">followTrip</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC06createB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/createTrip(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC06createB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">createTrip(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createTrip</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App10TripRoutesC03getB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF"></a>
+                    <a name="//apple_ref/swift/Method/getTrip(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App10TripRoutesC03getB04HTTP21ResponseRepresentable_pAE7RequestC7request_tKF">getTrip(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTrip</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">ResponseRepresentable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://fabularis.dk" target="_blank" rel="external">Daniel</a>. All rights reserved. (Last updated: 2018-03-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

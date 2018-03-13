@@ -12,7 +12,7 @@ extension Int {
     
     var boolValue : Bool{
         get {
-            return self == 0 ? true : false
+            return self == 0 ? false : true
         }
     }
     
