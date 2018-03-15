@@ -182,17 +182,22 @@ final class Destination : Model,ObjectIdentifiable, DataStorage {
     }
     
     func isUserTiedToDestination(user _user : User) -> Bool {
+        var isConnected : Bool = false
         if _user.id?.int == self.creator {
-            return true
+            isConnected = true
+        }
+        
+        if let trip = self.getDestinationsTrip() {
+            isConnected = trip.isUserTiedToTrip(user: _user)
         }
         
         for follower in self.followers {
             if follower.id == _user.id {
-                return true
+                isConnected = true
             }
         }
         
-        return false
+        return isConnected
     }
     
     func updateDestinationFromJSON(_ json : JSON) throws {

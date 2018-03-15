@@ -28,8 +28,8 @@ class TripRoutes {
         secureArea.get("forUser",User.parameter, handler: getUsersTrip)
         secureArea.get(Trip.parameter, "follow", handler: followTrip)
         secureArea.get(Trip.parameter, "accept" , User.parameter, handler: acceptFollow)
-        secureArea.get(Trip.parameter, "invite", User.parameter, handler: inviteUser)
         secureArea.post(Trip.parameter, "timeline", handler: getTripTimeline)
+        secureArea.post(Trip.parameter, "addAttendant", handler: addAttendant)
         //        /// Test routes
         //        routeBuilder.get("test", handler: createFeedKeys)
         //        /// Open GET Routes
@@ -56,6 +56,16 @@ class TripRoutes {
         //
         //        /// Notification routes
         //        secureArea.get("notifications", handler: getNotifications)
+    }
+    
+    func addAttendant(request: Request) throws -> ResponseRepresentable {
+        do {
+            let message = try request.getAPIRequestMessage()
+            let trip = TripController.init(forInterface: .api, request: request, message: message)
+            return try trip.addNewAttendant()
+        }catch let error as TriprAPIMessageError {
+            return try TripController.createResponse(payload: request.json!, request: request, message: nil,interface: .api, status: (.error, error.getErrorCode()))
+        }
     }
     
     func createNewDestination(request: Request) throws -> ResponseRepresentable {
@@ -106,15 +116,6 @@ class TripRoutes {
         }catch let error as TriprAPIMessageError {
             return try TripController.createResponse(payload: request.json!, request: request, message: nil,interface: .api, status: (.error, error.getErrorCode()))
         }
-    }
-    
-    func inviteUser(request: Request) throws -> ResponseRepresentable {
-        /*
-         needs to be rebuilt, should be a post service where you post usernames to invite (array)
-         and ofcourse also in the controller.
-         */
-        let trip = TripController.init(forInterface: .api, request: request, message: nil)
-        return try trip.inviteUser()
     }
     
     func followTrip(request: Request) throws -> ResponseRepresentable {

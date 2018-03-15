@@ -7,8 +7,31 @@
 
 import Foundation
 
+struct PayloadTripAddNewAttendant: JSONConvertible {
+    var user : String
+    
+    init(user _user : String){
+        self.user = _user
+    }
+    
+    init(json: JSON) throws {
+        guard let user : String = try json.get("user") else {
+            throw TriprAPIMessageError.missingData(field: "user")
+        }
+        self.user = user
+    }
+    
+    func makeJSON() throws -> JSON {
+        var json = JSON()
+        try json.set("user", user)
+        return json
+    }
+    
+    
+}
 
-struct updateTripPayload : JSONConvertible {
+
+struct PayloadTripUpdate : JSONConvertible {
     var name : String
     var isPrivate : Bool
     var tripStartDate : Double
@@ -57,7 +80,7 @@ struct updateTripPayload : JSONConvertible {
     
 }
 
-struct createNewTripPayload  : JSONConvertible{
+struct PayloadTripCreateNew  : JSONConvertible{
     
     var name : String
     var isPrivate : Bool

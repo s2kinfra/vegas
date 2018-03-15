@@ -40,7 +40,6 @@ final class DestinationController : SuperController {
         if let json = try self.message?.payload.asJSON() {
             do{
                 let destImage = try json.get("destinationImage") as attachmentPayload
-                print(destImage)
                 guard let base64data = Data(base64Encoded: destImage.base64, options: .ignoreUnknownCharacters) else {
                     throw TriprAPIMessageError.invalidData(field: "destinationImage")
                 }

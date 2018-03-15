@@ -31,6 +31,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		35036E09205908B50048966F /* TripAttendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35036E08205908B50048966F /* TripAttendant.swift */; };
 		35F44A8B2057E2B0005F8646 /* DestinationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F44A8A2057E2B0005F8646 /* DestinationRoutes.swift */; };
 		OBJ_1004 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* Package.swift */; };
 		OBJ_1010 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_191 /* Package.swift */; };
@@ -5186,6 +5187,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35036E08205908B50048966F /* TripAttendant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAttendant.swift; sourceTree = "<group>"; };
 		35F44A8A2057E2B0005F8646 /* DestinationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRoutes.swift; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Auth::Authorization::Product" /* Authorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -7507,6 +7509,7 @@
 				OBJ_44 /* Post.swift */,
 				OBJ_45 /* Trip.swift */,
 				OBJ_46 /* User.swift */,
+				35036E08205908B50048966F /* TripAttendant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -11191,6 +11194,7 @@
 				OBJ_1365 /* FileHandler.swift in Sources */,
 				OBJ_1366 /* isAuthenticatedMiddleware.swift in Sources */,
 				OBJ_1367 /* Attachment.swift in Sources */,
+				35036E09205908B50048966F /* TripAttendant.swift in Sources */,
 				OBJ_1368 /* Comment.swift in Sources */,
 				OBJ_1369 /* Destination.swift in Sources */,
 				OBJ_1370 /* Envy.swift in Sources */,

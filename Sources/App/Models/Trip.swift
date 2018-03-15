@@ -185,6 +185,9 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             return users
         }
     }
+    var attendants : Siblings<Trip, User, TripAttendant> {
+        return siblings()
+    }
     
     init(tripStartDate _startdate : Double, tripEndDate _enddate : Double, isPrivate _isprivate : Bool, creator _creator : Int, name _name : String) {
         self.isPrivate = _isprivate
@@ -202,8 +205,12 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
         }
         
         for follower in self.followers {
-            if follower.id == _user.id {
-                return true
+            do{
+                if try follower.getFollowerUser().id == _user.id {
+                    return true
+                }
+            }catch{
+                print("error that needs to be handled")
             }
         }
         
@@ -251,6 +258,7 @@ final class Trip : Model,ObjectIdentifiable, DataStorage {
             try json.set("timeline", "")
             try json.set("followers", "")
             try json.set("tripImage", "")
+            try json.set("attendants", "")
             try json.set("id",self.id!)
         }
         
@@ -369,6 +377,12 @@ extension Trip: JSONConvertible {
         try json.set("followers", JSONfollowers)
         try json.set("tripImage", _tripImage)
         try json.set("id",self.id!)
+        
+        var JSONattendants = [JSON]()
+        for attendant in try self.attendants.all() {
+            JSONattendants.append(try attendant.makeBasicJSON())
+        }
+        try json.set("attendants", JSONattendants)
         return json
     }
 }

@@ -15,6 +15,26 @@ import MySQL
 
 final class TripController : SuperController {
     
+    func addNewAttendant() throws -> ResponseRepresentable {
+        guard let trip = try? request.parameters.next(Trip.self) else {
+            return try self.createResponse(payload: (self.request.json)!, status: (.error, "Trip doesnt exists"))
+        }
+        
+        let attendant = try PayloadTripAddNewAttendant.init(json: (self.message?.payload.asJSON())!)
+        
+        guard let user = try User.makeQuery().filter("username", .equals, attendant.user).first() else {
+            return try self.createResponse(payload: (self.request.json)!, status: (.error, "User not found"))
+        }
+        
+        do {
+            try trip.attendants.add(user)
+            return try self.createResponse(payload: (self.request.json)!, status: (.ok, "User added to Trip"))
+            
+        }catch let error {
+            return try self.createResponse(payload: (self.request.json)!, status: (.error, error.localizedDescription))
+        }
+        
+    }
     
     func createNewDestination() throws -> ResponseRepresentable {
         do {
@@ -76,27 +96,10 @@ final class TripController : SuperController {
         
     }
     
-    func inviteUser() throws -> ResponseRepresentable {
-        let me = try request.user()
-        guard let trip = try? request.parameters.next(Trip.self) else {
-            return try self.createResponse(payload: (self.request.json)!, status: (.error, "Trip doesnt exists"))
-        }
-        
-        guard let user = try? request.parameters.next(User.self) else {
-            return try self.createResponse(payload: (self.request.json)!, status: (.error, "User doesnt exists"))
-        }
-        
-        if !trip.isUserTiedToTrip(user: me){
-            return try self.createResponse(payload: (self.request.json)!, status: (.error, "You cant invite to this trip"))
-        }
-        
-        return try self.createResponse(payload: (self.request.json)!, status: (.ok, "Invite sent"))
-    }
-    
     func updateTrip() throws -> ResponseRepresentable {
         let user = try request.user()
         guard let trip = try? request.parameters.next(Trip.self) else {
-             return try self.createResponse(payload: (self.request.json)!, status: (.error, "Trip doesnt exists"))
+            return try self.createResponse(payload: (self.request.json)!, status: (.error, "Trip doesnt exists"))
         }
         
         try trip.updateTripFromJSON((self.message?.payload.asJSON())!)
@@ -200,7 +203,7 @@ final class TripController : SuperController {
     func createTrip() throws -> ResponseRepresentable {
         do {
             let me = try self.request.user()
-            let tripData = try createNewTripPayload.init(json: (self.message?.payload.asJSON())!)
+            let tripData = try PayloadTripCreateNew.init(json: (self.message?.payload.asJSON())!)
             
             let trip = try Trip.createNewTrip(tripStartDate: tripData.tripStartDate,
                                               tripEndDate: tripData.tripEndDate,

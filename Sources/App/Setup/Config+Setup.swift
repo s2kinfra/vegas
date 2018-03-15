@@ -57,5 +57,6 @@ extension Config {
         preparations.append(Destination.self)
         preparations.append(Comment.self)
         preparations.append(Attachment.self)
+        preparations.append(TripAttendant.self)
     }
 }
