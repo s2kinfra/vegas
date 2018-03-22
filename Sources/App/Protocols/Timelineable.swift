@@ -41,6 +41,7 @@ extension Timelineable {
     func getTimelineItems( startIndex _idx : Int = 0 , numberOfFeeds _limitation : Int = 25) throws -> [Feed]
     {
         var feedArray = [Feed]()
+        print(self.objectKey)
         let feeds = try Feed.database?.raw("SELECT * FROM `feeds` INNER JOIN `feed_keyss` ON `feeds`.`id` = `feed_keyss`.`feedId` WHERE `feed_keyss`.`objectKey` = '\(self.objectKey)' ORDER BY `timestamp` DESC LIMIT \(_idx) , \(_limitation)")
         guard let data = feeds?.wrapped.array else{
             return [Feed]()

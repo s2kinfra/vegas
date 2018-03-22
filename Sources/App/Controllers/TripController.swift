@@ -135,6 +135,7 @@ final class TripController : SuperController {
         var notifUsers = [User]()
         for follower in trip.followers {
             notifUsers.append(try follower.getFollowerUser())
+            try follower.getFollowerUser().createFeedForMe(feedObjectType: comment.objectType, feedObjectId: comment.objectIdentifier, timestamp: Date().timeIntervalSince1970, feedType: .commentAdded)
         }
         
         try trip.createFeedForMe(feedObjectType: comment.objectType, feedObjectId: comment.objectIdentifier, timestamp: Date().timeIntervalSince1970, feedType: .commentAdded)
