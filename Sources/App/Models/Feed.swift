@@ -30,7 +30,6 @@ final class Feed : Model,DataStorage {
     var dataStorage = dataStorageRow()
     var dataStorageACL = dataStorageACLRow()
     
-    
     func getFullFeedDataAsJSON( ) throws -> JSON {
         var json = JSON()
         

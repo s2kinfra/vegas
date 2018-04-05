@@ -27,6 +27,7 @@ enum TripErrors : Error {
         }
     }
 }
+
 final class Trip : Model,ObjectIdentifiable, DataStorage {
     var dataStorage = dataStorageRow()
     var dataStorageACL = dataStorageACLRow()

@@ -292,6 +292,29 @@ final class User : Model, DataStorage {
     }
     
     /**
+     Get users timeline
+ 
+    */
+    func getTimeline() throws -> [timelineResponsePayload]{
+        var tl = [timelineResponsePayload]()
+        
+        let feeds = try self.getTimelineItems(startIndex: 0, numberOfFeeds: 25)
+        
+        for feed in feeds{
+            switch feed.feedType! {
+            case .commentAdded:
+                break
+                
+            default :
+                break
+            }
+        }
+        
+        return tl
+    }
+    
+    
+    /**
      Login User with request containing email and password
      
      **Username can be used in the request as long as it is saved in the email data**
