@@ -32,6 +32,9 @@
 
 /* Begin PBXBuildFile section */
 		35036E09205908B50048966F /* TripAttendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35036E08205908B50048966F /* TripAttendant.swift */; };
+		353FE086207B435700F3C67B /* SearchRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FE085207B435700F3C67B /* SearchRoutes.swift */; };
+		353FE089207B509B00F3C67B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FE088207B509B00F3C67B /* SearchController.swift */; };
+		353FE08B207B561400F3C67B /* SearchPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FE08A207B561400F3C67B /* SearchPayload.swift */; };
 		35F44A8B2057E2B0005F8646 /* DestinationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F44A8A2057E2B0005F8646 /* DestinationRoutes.swift */; };
 		OBJ_1004 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* Package.swift */; };
 		OBJ_1010 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_191 /* Package.swift */; };
@@ -5188,6 +5191,9 @@
 
 /* Begin PBXFileReference section */
 		35036E08205908B50048966F /* TripAttendant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAttendant.swift; sourceTree = "<group>"; };
+		353FE085207B435700F3C67B /* SearchRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoutes.swift; sourceTree = "<group>"; };
+		353FE088207B509B00F3C67B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		353FE08A207B561400F3C67B /* SearchPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPayload.swift; sourceTree = "<group>"; };
 		35F44A8A2057E2B0005F8646 /* DestinationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRoutes.swift; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Auth::Authorization::Product" /* Authorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6812,6 +6818,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		353FE084207B433F00F3C67B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				353FE085207B435700F3C67B /* SearchRoutes.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		35F44A892057E29E005F8646 /* Destination */ = {
 			isa = PBXGroup;
 			children = (
@@ -6829,6 +6843,7 @@
 				OBJ_14 /* TripPayload.swift */,
 				OBJ_15 /* UserPayloads.swift */,
 				OBJ_16 /* timelinePayload.swift */,
+				353FE08A207B561400F3C67B /* SearchPayload.swift */,
 			);
 			path = Payloads;
 			sourceTree = "<group>";
@@ -7067,6 +7082,7 @@
 				OBJ_20 /* PostController.swift */,
 				OBJ_21 /* SuperController.swift */,
 				OBJ_22 /* TripController.swift */,
+				353FE088207B509B00F3C67B /* SearchController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -8159,6 +8175,7 @@
 		OBJ_58 /* V1 */ = {
 			isa = PBXGroup;
 			children = (
+				353FE084207B433F00F3C67B /* Search */,
 				35F44A892057E29E005F8646 /* Destination */,
 				OBJ_59 /* Follow */,
 				OBJ_62 /* Trip */,
@@ -11175,6 +11192,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_1348 /* AttachmentPayload.swift in Sources */,
+				353FE086207B435700F3C67B /* SearchRoutes.swift in Sources */,
 				OBJ_1349 /* CommentPayload.swift in Sources */,
 				OBJ_1350 /* DestinationPayload.swift in Sources */,
 				OBJ_1351 /* TripPayload.swift in Sources */,
@@ -11183,6 +11201,7 @@
 				OBJ_1354 /* TriprAPIMessages.swift in Sources */,
 				OBJ_1355 /* DestinationController.swift in Sources */,
 				OBJ_1356 /* PostController.swift in Sources */,
+				353FE089207B509B00F3C67B /* SearchController.swift in Sources */,
 				OBJ_1357 /* SuperController.swift in Sources */,
 				OBJ_1358 /* TripController.swift in Sources */,
 				OBJ_1359 /* IntExtensions.swift in Sources */,
@@ -11206,6 +11225,7 @@
 				OBJ_1376 /* Post.swift in Sources */,
 				OBJ_1377 /* Trip.swift in Sources */,
 				OBJ_1378 /* User.swift in Sources */,
+				353FE08B207B561400F3C67B /* SearchPayload.swift in Sources */,
 				OBJ_1379 /* Attachable.swift in Sources */,
 				OBJ_1380 /* Commentable.swift in Sources */,
 				OBJ_1381 /* DataStorageProtocol.swift in Sources */,

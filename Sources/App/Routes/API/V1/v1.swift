@@ -45,6 +45,11 @@ final class RoutesV1: RouteCollection {
                     let destRoutes = DestinationRoutes.init()
                     destRoutes.addRoutes(routeBuilder: dest)
                 }
+                
+                v1.group("search") { search in
+                    let searchRoutes = SearchRoutes.init()
+                    searchRoutes.addRoutes(routeBuilder: search)
+                }
             }
         }
     }

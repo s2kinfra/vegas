@@ -56,6 +56,7 @@ extension User: JSONConvertible {
         try json.set("followingRequests", self.followingRequests)
         try json.set("followerRequests", self.followerRequest)
         try json.set("profileImage", self.profileImage)
+        try json.set("sessionTimeout", self.sessionTimeout)
         return json
     }
     
@@ -144,6 +145,7 @@ extension User: Preparation {
             builder.string("lastname")
             builder.int("profilePicture",optional : true, unique: false)
             builder.bool("isPrivate", optional: false, unique: false, default: false)
+            builder.double("sessionTimeout", optional : true, unique : false)
         }
     }
     
@@ -206,7 +208,8 @@ extension User: PasswordAuthenticatable {
             
             user = match
         }
-        
+        user.sessionTimeout = Date().addingTimeInterval(60 * 60 * 24 * 6).timeIntervalSince1970
+        try user.save()
         return user
     }
     

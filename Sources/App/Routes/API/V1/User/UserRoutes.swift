@@ -29,13 +29,15 @@ class UserRoutes {
         routeBuilder.get("logout", handler: logoutUser)
         /// Open POST Routes
         routeBuilder.post("login", handler: loginUser)
+        routeBuilder.get("login", handler: isLoggedIn)
         routeBuilder.post("register", handler: registerUser)
         
         ///Closed Routes , required logged in user
         let secureArea = routeBuilder.grouped(passmw)
         /// GET Routes
         secureArea.get(User.parameter, handler: getUser)
-        
+        secureArea.get("id",Int.parameter, handler: getUserById)
+        secureArea.post("profileImage", handler: setProfileImage)
         
         /// Timeline routes for user, returns Feed objects
         secureArea.post("timeline", handler: getOwnTimeline)
@@ -49,6 +51,47 @@ class UserRoutes {
         
         /// Notification routes
         secureArea.get("notifications", handler: getNotifications)
+    }
+    
+    
+    /** User */
+    
+    func isLoggedIn(request: Request) throws -> ResponseRepresentable {
+        do {
+            _ = try request.user()
+            return try triprAPIResponseMessage.getNewResponseMessage(payload: try request.user().makeJSON(),
+                                                                     URI: request.uri.path,
+                                                                     reference: nil,
+                                                                     status: (.ok, "Logged in")).makeJSON()
+        }catch {
+            return try triprAPIResponseMessage.getNewResponseMessage(payload: "",
+                                                                     URI: request.uri.path,
+                                                                     reference: nil,
+                                                                     status: (.error, "Not logged in")).makeJSON()
+        }
+    }
+    
+    func setProfileImage(request : Request) throws -> ResponseRepresentable {
+        do{
+            let message = try request.getAPIRequestMessage()
+            let me = try request.user()
+            let profileImageData = try PayloadUserUpdateProfileImage.init(json: message.payload.asJSON())
+            
+            guard let base64data = Data(base64Encoded: profileImageData.profileImage.base64 , options: .ignoreUnknownCharacters) else {
+                throw TriprAPIMessageError.invalidData(field: "attachment")
+            }
+            let file = try FileHandler.uploadBase64File(user:me, file: base64data, filename: profileImageData.profileImage.filename)
+            me.profileImage = file
+            try me.save()
+            
+            return try triprAPIResponseMessage.getNewResponseMessage(payload: "",
+                                                                     URI: request.uri.path,
+                                                                     reference: message.messageId,
+                                                                     status: (.ok, "Profile Image updated")).makeJSON()
+            
+        }catch let error as TriprAPIMessageError {
+            return try TripController.createResponse(payload: request.json!, request: request, message: nil,interface: .api, status: (.error, error.getErrorCode()))
+        }
     }
     
     ///Test route
@@ -277,6 +320,32 @@ class UserRoutes {
                                                                  reference: "",
                                                                  status: (.ok,"User exists")).makeJSON()
     }
+    
+    /** get a user by its id */
+    func getUserById(request : Request) throws -> ResponseRepresentable {
+        guard let user_id = try? request.parameters.next(Int.self) else {
+            return try triprAPIResponseMessage.getNewResponseMessage(payload: "",
+                                                                     URI: request.uri.path,
+                                                                     priority: .medium,
+                                                                     reference: "",
+                                                                     status: (.error ,"Invalid user id")).makeJSON()
+        }
+        
+        guard let user = try User.find(Identifier(user_id)) else {
+            return try triprAPIResponseMessage.getNewResponseMessage(payload: "",
+                                                                     URI: request.uri.path,
+                                                                     priority: .medium,
+                                                                     reference: "",
+                                                                     status: (.error ,"User id doesnt exists")).makeJSON()
+        }
+        
+        return try triprAPIResponseMessage.getNewResponseMessage(payload: try user.makeJSON(),
+                                                                 URI: request.uri.path,
+                                                                 priority: .medium,
+                                                                 reference: "",
+                                                                 status: (.ok,"User exists")).makeJSON()
+    }
+    
     
     /** Login a user */
     func loginUser(request: Request) throws -> ResponseRepresentable {

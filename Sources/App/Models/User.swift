@@ -50,6 +50,16 @@ extension User {
             return getDataFor(key: "firstname")
         }
     }
+    
+    var sessionTimeout : Double? {
+        set(newValue) {
+            self.dataStorage["sessionTimeout"] = newValue
+        }
+        get {
+            return getDataFor(key: "sessionTimeout")
+        }
+    }
+    
     var username  : String? {
         set(newValue) {
             self.dataStorage["username"] = newValue
@@ -108,6 +118,9 @@ extension User {
             
             return file
         }
+        set (newValue){
+            self.profilePicture = newValue.id?.int
+        }
     }
 }
 
@@ -127,6 +140,7 @@ final class User : Model, DataStorage {
         self.setDataLevel(key: "lastname", levels: [.row , .json])
         self.setDataLevel(key: "profilePicture", level: .row)
         self.setDataLevel(key: "profileImage", level: .json)
+        self.setDataLevel(key: "sessionTimeout", levels: [.row, .json])
     }
     
     func getBaseUserData() -> baseUserData {
@@ -263,7 +277,6 @@ final class User : Model, DataStorage {
         let passwordCredentials = Password(username: username.lowercased(), password: password)
         
         let user = try User.authenticate(passwordCredentials)
-        
         return user
     }
     
@@ -287,7 +300,7 @@ final class User : Model, DataStorage {
         let passwordCredentials = Password(username: email.lowercased(), password: password)
         
         let user = try User.authenticate(passwordCredentials)
-        
+
         return user
     }
     
