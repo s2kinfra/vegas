@@ -75,3 +75,7 @@ vegas.xcodeproj/xcuserdata/infra.xcuserdatad/xcschemes/xcschememanagement.plist
 vegas.xcodeproj/project.xcworkspace/xcuserdata/infra.xcuserdatad/UserInterfaceState.xcuserstate
 vegas.xcodeproj/xcuserdata/infra.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 vegas.xcodeproj/xcuserdata/infra.xcuserdatad/xcschemes/xcschememanagement.plist
+*.xcuserstate
+*.xcbkptlist
+*.plist
+Public/uploads/infra/profilePicture.-png
